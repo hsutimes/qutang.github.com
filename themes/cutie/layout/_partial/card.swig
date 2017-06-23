@@ -13,7 +13,11 @@
 		{% endif %}
 		
 		<div class='Card-figure'>
-			<a href="{{ item.external_link | default(url_for(item.path)) }}" rel="noopener noreferrer" target="_blank">
+			{% if item.external_link %}
+				<a href="{{ item.external_link }}" rel="noopener noreferrer" target="_blank">
+			{% else %}
+				<a href="{{ url_for(item.path) }}">
+			{% endif %}
 				<img src="{{ '/images/' + category_name + '.svg' }}" alt="">
 			</a>
 		</div>
@@ -21,12 +25,24 @@
 			
 				<div class='Card-excerpt'>
 					
-					<p><a href="{{ item.external_link | default(url_for(item.path)) }}" rel="noopener noreferrer" target="_blank">{{ strip_html(truncate(item.content, {length: 180, separator: ' ', omission: '...'}))|default("No content") }} </a></p>
+					<p>
+					{% if item.external_link %}
+						<a href="{{ item.external_link }}" rel="noopener noreferrer" target="_blank">
+					{% else %}
+						<a href="{{ url_for(item.path) }}">
+					{% endif %}
+					{{ strip_html(truncate(item.content, {length: 180, separator: ' ', omission: '...'}))|default("No content") }} </a></p>
 					<p>{{ partial('_partial/article-tags', {item: item}) }}</p>
 				</div>
 			
 				<div class='Card-title'>
-					<h2><a href="{{ url_for(item.path) }}" rel="noopener noreferrer" target="_blank">{{ titlecase(item.title) }}</a></h2>
+					<h2>
+					{% if item.external_link %}
+						<a href="{{ item.external_link }}" rel="noopener noreferrer" target="_blank">
+					{% else %}
+						<a href="{{ url_for(item.path) }}">
+					{% endif %}
+					{{ titlecase(item.title) }}</a></h2>
 					<p>{{ partial('_partial/article-tags', {item: item}) }}</p>
 				</div>
 				
