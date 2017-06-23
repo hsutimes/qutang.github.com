@@ -93,3 +93,5 @@ social:
 deploy:
   type: git
   repo: https://github.com/qutang/qutang.github.com.git
+
+google_analytics: UA-38342303-1
