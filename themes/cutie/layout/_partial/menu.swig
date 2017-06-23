@@ -17,4 +17,12 @@
 			</a>
 		</div>
 	{% endfor %}
+	<div class='menu-item'>
+
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="{{ '/images/search.svg' }}" alt="">
+			</a>
+		</div>
+	</div>
 </nav>
