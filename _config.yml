@@ -6,7 +6,6 @@
 title: QT is not Cutie
 description:
 author: Qu Tang
-signature: QT
 language:
 timezone:
 
@@ -83,10 +82,46 @@ archive_generator:
 ## Themes: https://hexo.io/themes/
 theme: cutie
 
-social:
-  weixin: 
-  github: https://github.com/qutang
-  linkedin: https://www.linkedin.com/in/qutang
+cutie:
+  slogan: Coding, writing, research and FUN.
+  signature: QT
+# Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
+# If menu is absent, only "archive" and "search" menu items will be preserved
+# Configurable menu items should not exeed 4, otherwise the last ones will be ignored
+  menu:
+    Resume: 
+      link: /resume/
+      icon: /images/resume.svg
+    Projects: 
+      link: /categories/projects/
+      icon: /images/projects.svg
+    Notes: 
+      link: /categories/notes/
+      icon: /images/notes.svg
+    Fun: 
+      link: /categories/fun/
+      icon: /images/fun.svg
+# As long as the name matches the font awesome icon name, you can add even more social links
+# As the tip: the social link can be a QRCODE link
+  social:
+    medium: 
+    skype: 
+    slack: 
+    steam: 
+    tumblr: 
+    whatsapp: 
+    youtube: 
+    snapchat: 
+    instagram: 
+    qq: 
+    google-plus: 
+    twitter: 
+    facebook: 
+    weibo: 
+    weixin: 
+    github: https://github.com/qutang
+    linkedin: https://www.linkedin.com/in/qutang
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
