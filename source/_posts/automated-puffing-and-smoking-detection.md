@@ -6,6 +6,7 @@ categories:
 tags:
 - Machine learning
 - Activity recognition
+icon: /images/activity-recognition.svg
 ---
 
 A compelementary introduction for a published paper about an Activity recognition algorithm based on Random Forest to automatically detect

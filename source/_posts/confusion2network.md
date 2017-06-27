@@ -8,6 +8,7 @@ tags:
 - Data visualization
 - R
 external_link: http://qutang.github.io/confusion2network/
+icon: /images/data-science.svg
 ---
 
 R package to convert confusion matrix into a network graph.
