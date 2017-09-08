@@ -249,6 +249,7 @@ img {
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
 	animation-fill-mode: both;
+	animation-delay: 0.5s;
 }
 
 .container:first-child {
@@ -281,7 +282,8 @@ img {
 	max-height: 5em;
 	animation-name: fadeInDown;
 	animation-duration: 1s;
-  	animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
 }
 
 .header .header-logo {
@@ -314,7 +316,8 @@ img {
 	margin: 3em 0;
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
-    animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -388,6 +391,7 @@ img {
 	animation-name: fadeInUp;
 	animation-duration: 1s;
 	animation-fill-mode: both;
+	animation-delay: 0.5s;
 }
 
 #footer-menu-container .menu-name {
@@ -523,7 +527,7 @@ img {
 	flex-grow: 1;
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
-    animation-fill-mode: both;
+	animation-fill-mode: both;
 	margin-right: 1em;
 }
 
@@ -663,7 +667,8 @@ img {
 	margin: 9em auto 0 auto;
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
-  	animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
 }
 
 .article a {
@@ -713,7 +718,8 @@ h1.article-title a{
 	margin: 9em auto;
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
-    animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-delay: 0.5s;
 }
 
 .page a {
@@ -766,6 +772,7 @@ h1.article-title a{
 	animation-name: fadeInLeft;
 	animation-duration: 0.5s;
 	animation-fill-mode: both;
+	animation-delay: 0.5s;
 }
 
 .search-container form {
