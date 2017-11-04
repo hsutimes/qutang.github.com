@@ -45,6 +45,13 @@ Visit my [personal website](https://qutang.github.io) for the demo.
 1. clone to your local machine
 1. run `hexo server`
 
+## Changelog
+
+### 2017-11-04 
+
+* Change lightbox to light gallery to remove jquery dependency
+* Add support for pinned post, allow up to 4 pinned post
+
 ## Installation and usage
 
 * clone repository into `themes` folder of your hexo website and rename the folder to `cutie`
