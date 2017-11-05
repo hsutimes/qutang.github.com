@@ -9,6 +9,7 @@ icon:
   - /images/bash.png
 categories:
   - notes
+version: -1
 ---
 
 My daily job requires writing scripts to process data, mainly stored in `csv` format. I recently found using single `bash` commands is often an easier and faster way than using `python`, `perl` or `R` for data preprocessing, for tasks like data merging, filtering, subsetting or even plotting. This notebook lists a set of utility `bash` commands by its use cases for data preprocessing.

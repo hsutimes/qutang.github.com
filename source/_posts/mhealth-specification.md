@@ -8,6 +8,7 @@ tags:
 - data storage
 external_link:
 - https://www.gitbook.com/read/book/qutang/mhealth-specification
+version: -1
 ---
 
 A documentation of a machine and human readable and extensible specification for high and low

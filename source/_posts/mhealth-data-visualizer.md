@@ -8,6 +8,7 @@ tags:
 categories:
 	- projects
 external_link: https://qutang.github.io/mhealth-data-visualizer/
+version: -1
 ---
 
 Mhealth data visualizer is an offline first visualization web app to view sensor, annotation and feature data stored in mhealth specification.

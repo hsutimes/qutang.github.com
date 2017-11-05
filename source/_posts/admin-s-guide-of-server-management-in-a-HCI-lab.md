@@ -8,6 +8,7 @@ tags:
 - Linux
 - Virtual machine
 external_link: https://www.gitbook.com/read/book/qutang/admin-s-guide-of-server-management-in-a-hci-lab
+version: -1
 ---
 
 A guidebook summarizing what I've learned when working as a linux server administrator in an HCI lab.

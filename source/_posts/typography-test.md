@@ -4,6 +4,7 @@ date: 2017-06-22 16:49:56
 tags:
 categories:
 	- notes
+version: -1
 ---
 
 This post is to test typography display of the theme.

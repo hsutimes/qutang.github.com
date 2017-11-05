@@ -10,6 +10,7 @@ tags:
 - Box2D
 author: Qu Tang, Zhe Zhang
 icon: /images/android.svg
+version: -1
 ---
 
 **TOWER AIRDROP** is an Android experimental **exergame** for kids to motivate and keep them sweater. It incorporates simple motion primitives such as *moving/shaking*, *tilting* and *touch gestures* into different game tasks: triggering parachute, avoiding obstacles, and stacking a tower. The Game paces are designed to fit the **focus attention** of kids. Game tasks are designed to be varying throughout the play to prevent kids getting tired of or losing focus when repeating the movement for a long time. <!--more-->
