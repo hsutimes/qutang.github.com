@@ -6,7 +6,7 @@ categories:
 tags:
 - Machine learning
 - Activity recognition
-icon: /images/activity-recognition.svg
+icon: /images/mhealth.png
 version: -1
 ---
 

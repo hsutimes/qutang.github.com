@@ -8,7 +8,7 @@ tags:
 - Data visualization
 - R
 external_link: http://qutang.github.io/confusion2network/
-icon: /images/data-science.svg
+icon: /images/R.png
 version: -1
 ---
 

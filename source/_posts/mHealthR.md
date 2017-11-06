@@ -10,6 +10,7 @@ tags:
 - R
 external_link: http://qutang.github.io/mHealthR/
 version: -1
+icon: /images/R.png
 ---
 
 R package to process and visualize data in mhealth specification.

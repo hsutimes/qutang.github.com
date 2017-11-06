@@ -5,6 +5,7 @@ tags:
 categories:
 	- notes
 version: -1
+icon: /images/typography.png
 ---
 
 This post is to test typography display of the theme.
