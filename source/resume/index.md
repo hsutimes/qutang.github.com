@@ -1,6 +1,7 @@
 ---
 title: Curriculum Vitae
 layout: page
+meta_info: "Last updated: 2016-08-31<p><a href='/中文简历/'>中文</a></p>"
 ---
 
 # __Qu Tang__
@@ -30,6 +31,16 @@ Qu Tang is a fourth year Ph.D student in Computer Engineering at Northeastern Un
     * __Scholarships__: National Scholarship of China, 2007-2009
 
 ## Publications
+### 2017 
+* D. John, __Q. Tang__, F. Albinali, and S.S. Intille, A monitor-independent movement summary to harmonize accelerometer data processing. In: MSSE; 2017 (In submission). [Download paper](), [source code](https://github.com/qutang/MIMSunit).
+
+### 2016
+* Houston KE, Bowers AR, Fu X, Liu R, Goldstein RB, Churchill J, Wiegand JP, Soo T, __Tang Q__, Peli E. A Pilot Study of Perceptual-Motor Training for Peripheral Prisms. Transl Vis Sci Technol 2016;5(1):9. [Download paper](http://tvst.arvojournals.org/article.aspx?articleid=2496592).
+
+### 2014
+* Goodwin MS, Haghighi M, __Tang Q__, Akcakaya M, Erdogmus D, Intille S. Moving towards a real-time system for automatically recognizing stereotypical motor movements in individuals on the autism spectrum using wireless accelerometry. In: Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM; 2014 p. 861–72. [Download paper](https://dl.acm.org/citation.cfm?doid=2632048.2632096).
+* __Tang Q__, Vidrine DJ, Crowder E, Intille SS. Automated Detection of Puffing and Smoking with Wrist Accelerometers. In: Proceedings of the 8th International Conference on Pervasive Computing Technologies for Healthcare. ICST, Brussels, Belgium, Belgium: ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering); 2014 p. 80–7. [Download paper](https://dl.acm.org/citation.cfm?id=2686905).
+
 ## Teaching
 * __Teaching Assistant__ _Northeastern University, Boston, US_
     * `Spring,2016` __CS4300: Computer Graphics__

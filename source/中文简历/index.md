@@ -1,13 +1,12 @@
 ---
-title: Curriculum Vitae
-permalink: "/zh/cv/"
-layout: cv
-css: "/assets/css/print.css"
+title: 个人简历
+layout: page
+meta_info: "最后更新: 2016-08-31<p><a href='/resume/'>English</a></p>"
 ---
 
 # 唐曲
 
-## [...@gmail.com](http://www.google.com/recaptcha/mailhide/d?k=01hQSjBLMxACjwbK_AGELOLg==&amp;c=WlYLqRnTu6ivdRewzazpnGXbp0Q42_mzU_5iu5dk6hY=)
+[...@gmail.com](http://www.google.com/recaptcha/mailhide/d?k=01hQSjBLMxACjwbK_AGELOLg==&amp;c=WlYLqRnTu6ivdRewzazpnGXbp0Q42_mzU_5iu5dk6hY=)
 
 * __工作地址__:
 Mobile Health Research Group, 
@@ -20,13 +19,11 @@ Huntington Avenue 360,
 Northeastern University,
 Boston, MA, 02115, US
 
-# 个人简介
----
+## 个人简介
 
 唐曲先生就读于美国波士顿东北大学计算机工程（Computer Engineering）专业，是一名在读博士生。他同时在[Stephen Intille](http://www.ccs.neu.edu/home/intille/)教授的[实验室](http://mhealth.ccs.neu.edu/)做研究助理。他的研究方向主要是普适和移动计算（Pervasive and Mobile Computing），人类身体活动识别 （Physical Activity Recognition）以及个人健康信息学（Personal Health Informatics），其中主要专注于实时传感器监测，实时身体活动识别，以及交互式主动学习 （Interactive active learning）和个人健康数据挖掘。他的长期目标是将工程与计算机科学技术实际运用到个人健康监控，测量以及行为干预领域。现阶段，他主要负责的项目是一个实时的能够7天24小时不间断监测人类身体活动的系统，主要目的在于可靠地收集大而高质量并且接近实际的身体活动数据。这个系统采用最新的安卓 （Android）智能手机与智能手表技术作为测量平台，并且运用生态瞬时评估法（Ecological Momentary assessment），交互式数据可视化以及自我注释技术来搜集接近实时的用户反馈。在这之前，他完成了两个基于机器学习关于身体活动识别的算法用于检测吸烟行为以及探测自闭症儿童的刻板动作。他于2013年获得波士顿东北大学电气工程（Electrical Engineering）硕士学位，于2010年获得电子科技大学电子科学与技术（光电方向）学士学位。
 
-# 教育经历
----
+## 教育经历
 
 * `2013年至今` __博士在读__ 计算机工程（Computer Engineering）_@ 美国波士顿东北大学_
 * `2011-2013` __硕士__ 电气工程（Electrical Engineering） _@ 美国波士顿东北大学_
@@ -38,18 +35,25 @@ Boston, MA, 02115, US
 
     * __奖学金__: 国家奖学金，2007年至2009年；人民一等奖学金，2006年
 
-# 论文与其他出版物
----
+## 论文与其他出版物
 
-# 教学经历
----
+### 2017 
+* D. John, __Q. Tang__, F. Albinali, and S.S. Intille, A monitor-independent movement summary to harmonize accelerometer data processing. In: MSSE; 2017 (In submission). [下载论文](), [源代码](https://github.com/qutang/MIMSunit).
+
+### 2016
+* Houston KE, Bowers AR, Fu X, Liu R, Goldstein RB, Churchill J, Wiegand JP, Soo T, __Tang Q__, Peli E. A Pilot Study of Perceptual-Motor Training for Peripheral Prisms. Transl Vis Sci Technol 2016;5(1):9. [下载论文](http://tvst.arvojournals.org/article.aspx?articleid=2496592).
+
+### 2014
+* Goodwin MS, Haghighi M, __Tang Q__, Akcakaya M, Erdogmus D, Intille S. Moving towards a real-time system for automatically recognizing stereotypical motor movements in individuals on the autism spectrum using wireless accelerometry. In: Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM; 2014 p. 861–72. [下载论文](https://dl.acm.org/citation.cfm?doid=2632048.2632096).
+* __Tang Q__, Vidrine DJ, Crowder E, Intille SS. Automated Detection of Puffing and Smoking with Wrist Accelerometers. In: Proceedings of the 8th International Conference on Pervasive Computing Technologies for Healthcare. ICST, Brussels, Belgium, Belgium: ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering); 2014 p. 80–7. [下载论文](https://dl.acm.org/citation.cfm?id=2686905).
+
+## 教学经历
 
 * __助教__ _美国东北大学_
 
     * `2016春季学期` __CS4300: 计算机图形学（Computer Graphics)__
 
-# 研究经历
----
+## 研究经历
 
 * `2013年一月至今` __研究助理__ _移动健康实验室 @ 美国东北大学_
 
@@ -59,8 +63,7 @@ Boston, MA, 02115, US
     
     + __编程接口与可视化系统开发__: 利用R和shiny开发了一个在线3D数据可视化系统用于分析校园学生卡交易信息的模式。利用Java和R分别开发了用于支持一个开放移动健康数据存储格式的编程接口库。 这些工具现在均在实验室内部或者合作实验室使用。
 
-# 工作与项目经历
----
+## 工作与项目经历
 
 * __应用开发__ _独立开发者_
 
@@ -72,8 +75,7 @@ Boston, MA, 02115, US
     
     + 数据分析和数据可视化: 扩展了一个基于MATLAB的可视化程序来支持新的数据类型。用回归分析协助设计了一个数据模型用于测量在驾驶汽车过程中，被视界盲点遮挡的物体百分比。该模型有助于揭示被遮挡物体的百分比与受试者感知到被遮挡物体的响应速率高度相关重要的研究结论。
 
-# 其他经历
----
+## 其他经历
 
 * `2014年9月至今` __Linux服务器管理员__ _移动健康实验室 @ 美国东北大学_
 
@@ -90,8 +92,7 @@ Boston, MA, 02115, US
     
     + 研讨会主持人。
 
-# 推荐人
----
+## 推荐人
 
 `2013年1月至今` __Stephen Intille博士__ _硕士及博士导师_
 

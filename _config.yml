@@ -82,6 +82,10 @@ archive_generator:
 ## Themes: https://hexo.io/themes/
 theme: cutie
 
+lazyload:
+  enable: true
+  onlypost: true
+
 cutie:
   slogan: Coding, writing, research and FUN.
   signature: QT
@@ -89,7 +93,7 @@ cutie:
 # If menu is absent, only "archive" and "search" menu items will be preserved
 # Configurable menu items should not exeed 4, otherwise the last ones will be ignored
   menu:
-    Resume: 
+    Resume/简历: 
       link: /resume/
       icon: /images/resume.svg
     Projects: 
