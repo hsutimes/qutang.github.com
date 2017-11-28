@@ -39,7 +39,7 @@ future: true
 # Highlight
 prism_plugin:
   mode: 'preprocess'    # realtime/preprocess
-  theme: 'coy'
+  theme: 'duotone-light'
   line_number: true    # default false
 
 highlight:
