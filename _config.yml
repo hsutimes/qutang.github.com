@@ -4,8 +4,9 @@
 
 # Site
 title: QT is not Cutie
-description:
+description: A personal website for Qu Tang. really long description. A personal website for Qu Tang. really long description.
 author: Qu Tang
+author_link: http://qutang.github.io
 language:
 timezone:
 
@@ -87,6 +88,7 @@ lazyload:
   onlypost: true
 
 cutie:
+  logo: /images/test-logo.jpg
   slogan: Coding, writing, research and FUN.
   signature: QT
 # Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
