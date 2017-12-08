@@ -70,6 +70,10 @@ Cutie works better with these hexo plugins:
 
 ## Changelog
 
+### 2017-12-08
+
+* Adjust heading, inline code, list typography
+
 ### 2017-12-05
 
 * Remove bottom border for header (I know it's ugly!). Redesign header.
