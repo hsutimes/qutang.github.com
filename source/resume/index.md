@@ -77,7 +77,7 @@ Qu Tang is a fifth year Ph.D student in Computer Engineering at Northeastern Uni
 
 * `Sep. 2017 - Present` Personalization of activity recognition algorithm
 
-    > This is a series of ongoing projects that I am working on for my PhD dissertation. I try to explore solutions to several practical problems during algorithm personalization. Such as problems like "how to deal with sensor orientation discrepancy and dynamic change?", "how to expand a machine learning model to more sensors on the fly?" and "how to handle unlabled or sparsely labeled personal data?".
+    > This is a series of ongoing projects I am working on for my PhD dissertation. I try to explore solutions to several practical problems during algorithm personalization. Such as "how to deal with sensor orientation discrepancy and dynamic change?", "how to expand a machine learning model to more sensors on the fly?" and "how to use multi-day unlabled or sparsely labeled personal data?".
 
 * `Sep. 2017 - Present` NHANES population study data processing
 
@@ -85,67 +85,90 @@ Qu Tang is a fifth year Ph.D student in Computer Engineering at Northeastern Uni
     >
     > The whole dataset involves over 10000 US individuals each with 7-day's wrist accelerometer data sampled at 80 Hz.
     >
-    > I have worked with students in cloud computing, in machine learning, Prof. Dinesh John in exercise science and Prof. Stephen Intille to come up with standardized protocol for data quality check and screening. 
+    > I am helping developing the standardized protocol for data quality check and screening. 
     >
-    > I have helped implementing various data processing algorithms including data format conversion, filtering detection and wear-nonwear detection. I have also successfully applied and validated the prior developed MIMS unit algorithm over around 700 individuals from NHANES dataset and will expand the validation to the entire dataset.
+    > I am helping implementing data processing algorithms for data format conversion and activity summary. I successfully validated the MIMS unit algorithm over around 700 individuals from NHANES dataset and will expand the validation to the entire NHANES dataset.
 
-* `Apr. 2017 - Oct. 2017` Posture and daily activity recognition with multiple sensors: algorithm design and validation
+* `Apr. 2017 - Oct. 2017` The impact of single and dual sensor placements for posture and daily activity recognition
 
-    > The purpose of this project is to explore the impact of different sensor locations and find out the optimal single and dual sensor combinations for posture and daily activity recognition. To our knowledge, this paper is the first that systematically analyzed the impact of 7 single and 21 dual sensor locations for posture and activity recognition.
+    > This project aims to explore the impact of single or dual sensor placements for posture and daily activity recognition. To our knowledge, this paper is the first to systematically analyze 7 single and 21 dual different sensor placements for posture and activity recognition.
     > 
-    > I developed this algorithm using sensor orientation specific features which significantly increased the performance. The algorithm achieves superior performance compared with prior publications.
-    >
-    > The algorithm is validated through the SPADES dataset (with 53 participants, each with 3 hour data containing 17 activites, total size around 3GB).
+    > I developed and implemented the machine learning pipeline. I proposed a set of new sensor orientation related features which helped improving performance for over 30% in both tasks.I also designed all validation experiments across different combination of sensor locations. 
+    > 
+    > The algorithm used a 3GB SPADES-lab dataset (with 53 participants, each with 3 hour data containing 17 activites).
     > 
     > A journal publication related to this project is currently under review.
 
-* `Sep. 2016 - Present` "Log My Life" research study (Android App developement)
+* `Sep. 2016 - Present` "Log My Life" research study
 
-    > This is a 2-year data collection project aiming to collect ecological momentary assessment (EMA) survey data and geological data using Android app throughout 7 days to analyze the correlation or impact of support housing to homeless teenagers about their sexual, drug and alcohol behaviors. It is a collaboration project with a public health team from USC.
-    >
-    > The study aims to deploy over 200? participants. Currently the app developement and test stage have finished.
+    > This 2-year data collection project aims to collect ecological momentary assessment (EMA) surveys and geological data using Android app for a week to analyze the correlation between support housing and the sexual, drug and alcohol behaviors of homeless teenagers. The study aims to deploy over 200? participants.
     >  
-    > I have been working on developing and maintaining the data collection app built with Android. The app uses firebase as data collection backend. The app supports 24/7 hour location sensing, dual EMA survey and daily log scheduling and remote configuring of surveys. The app also supports conditioning and looping routing logic which was unavailable in general EMA survey frameworks (e.g. Apple's ResearchKit and Google's StudyKit).
-
-* `Sep. 2015 - Nov. 2017` MIMS unit algorithm design and validation
-
-    > This project aims to develop a new signal processing algorithm called "MIMS" (aka. "Monitor independent movement summary") to summarize raw accelerometer data into epochs that can work across different devices. Such summaries can be used to measure the intensity, energy expenditure and Metabolic rate for physical activities. None of other similar summary agorithms can have consistent results across different devices.
+    > I worked on developing and maintaining the Android app. I designed new scheduling logic that supports dual surveys with different schedules. I also developed new conditioning and looping routing logics which are unavailable in most EMA frameworks (e.g. Apple's ResearchKit and Google's StudyKit).
     >
-    > I developed the entire signal processing pipeline for this algorithm. The core idea is to restore raw accelerometer signal from low dynamic range devices using local spline regression and to apply a consistent interpolation and filtering strategy to harmonize the specification differences across devices.
+    > This project is under deployment stage.
+
+* `Sep. 2015 - Nov. 2017` A Monitor Independent Movement Summary (MIMS) unit for human activity measurement
+
+    > This project aims to develop a new signal processing algorithm to summarize raw accelerometer data into epochs that can work consistently across devices. Activity summary can measure the intensity, energy expenditure and Metabolic rate for physical activities. 
+    > 
+    > The algorithm performs at least 30% more consistent across devices than other summary agorithms (e.g. "Biobank ENMO" and "Actigraph's activity count") by introducing an "extrapolation" step to fix distorted signal for low dynamic range devices and ensuring a consistent interpolation and filtering mechanism across devices with different sampling rates.
     >
-    > The validation experiment with shaker, treadmill and activity data has show MIMS algorithm has the lowest coefficient of variety over the other two most used algorithms: "Biobank ENMO" and "Actigraph's activity count".
+    > I developed and implemented the entire signal processing algorithm. 
     >
-    > A journal paper of this algorithm has been submitted and currently under review.
+    > A journal paper has been submitted and currently under review.
     >
-    > An open sourced R package has been released for this algorithm.
+    > An open sourced R package has been released.
 
-* `Jan. 2015 - Aug. 2016` "SPADES" mobile sensing research study (Android App developement)
+* `Jan. 2015 - Aug. 2016` "SPADES" research study to collect physical activity and context data through mobile sensing
 
-    > Working on developing real-time physical activity measurement system on latest Android platforms (smart phone and smart watch). Finished development and deployed to 50 participants for long term (3 months) data collection. More than 50 bug fixes and more than 20 feature implementations during deployment. Current system worked reliably aiming to collect high quality long term real world dataset: collecting high sampling rate (50Hz) raw sensor data 24 hours without stopping for three months.
+    > This project aims to collect physical activity (accelerometers) and contextual (phone, watch logging and location) data with various annotation methods and sensory setup. The complete dataset involves 50 participants each has over 10GB data from three sessions.
+    >
+    > The annotation methods include "expert real-time annotations", "memory recall annotations" and "EMA survey annotations". The dataset involves at most 7 wearable accelerometers, smart watch, smart phones and GPS devices.
+    >
+    > I developed and maintained the Android app. I implemented a complex periodic alarming system between smart watch and phone to ensure collecting high sampling frequency (50Hz, 100Hz) sensory data. The app is designed to run 24/7 for at least 3 months.
+    > 
+    > I developed and implemented the protocol and associated tools to visualize, convert and batch process all the dataset.
 
-* `Sep. 2013 - Jan. 2014` Autism stereotypical motion recognition algorithm design and validation
+* `Sep. 2013 - Jan. 2014` A cross-study validation for machine learning algorithms to detect stereotypical motor movement 
 
-    > Detail
+    > "'Lower-level' stereotypical behaviors tend to characterize more severely affected and cognitively impaired individuals (who has Autism), including stereotypical motor movements (SMM). Such behavior can lead to object or self injury. SMM can be detectable by wearable motion sensor because of their repetitive and fixated patterns.
+    >
+    > This project extends previous published work to validate machine learning algorithms and feature sets across two studies conducted apart by two years, which to our knowledge, is the first paper to do such follow-up experiment in the domain.
+    > 
+    > The results revealed significant insight on the difficulty of generalizing algorithms over individuals or even within individuals whose behavior evolves after two years.
+    > 
+    > I worked on implementing decision tree algorithms and conducting half of the experiments.
+    >
+    > A conference paper was published in 2014.
 
-* `Sep. 2013 - Dec. 2013` Tower Airdrop: an Android exercise game developement
+* `Sep. 2013 - Dec. 2013` Tower Airdrop: an Android exercise game
 
-    > __Tower Airdrop__ is a 2D exergame in Android to promote kid's physical activity. It used Box2D as physical engine, and used internal sensors to detect activity intensity and tilting. See source code. This app is experimental and has stopped further development.
+    > Tower Airdrop is a 2D exergame in Android to promote kid's physical activity. It is inspired by the classic box stacking game.
+    > 
+    > It used Box2D as physical engine to simulate the airdropping of boxes. The game borrowed the idea of "interval training", where vigorous "shaking" is used to open the parachute followed by a concise control of "tilting" to stack the dropped box.
+    >
+    > I proposed the original idea and worked on developing the physical engine system, tilting and shaking integration, and scoring and leveling-up mechanism.
 
-* `Sep. 2012 - Dec. 2013` Smoking detection algorithm design and validation
 
-    > Detail
+* `Sep. 2012 - Dec. 2013` Puffing and smoking detection using wrist accelerometers
 
-* `Dec. 2011 - Aug. 2012` Prism glasses training app developement and maintainance
+    > Smoking cessation is important for longevity and disease preventation. Using wearable sensors to monitor smoking and puffing provides a low cost way to help smoking cessation.
+    > 
+    > This pilot project aims to detect individual puffings and smokings using wrist accelerometers on a dataset with 14 participants (2 hour sessions for each).
+    >
+    > I designed the entire hierarchical machine learning model using random forest and time series moving average modeling. The results show better performance over prior work yet reveals the  divergence in individual behaviors.
 
-    > extended a prism glasses training program in VB and C# by adding new GUIs, User feedback functionality and multimedia support. Fixed a critical bug caused by a false coordinate transformation between different screens that affects at least 10 training sessions. 
+* `Dec. 2011 - Aug. 2012` Prism glasses training app
+
+    > Extended a prism glasses training app written in VB and C# by adding new GUIs, User feedback functionality and multimedia support. Fixed a critical bug caused by a false coordinate transformation between different screens that affects at least 10 training sessions. 
 
 * `Dec. 2011 - Aug. 2012` 3D virtual mall collision measurement system developement
 
-    > Wrote a hardware driver for joystick controller with Win32 API, as part of an eye tracking system in C/C++ for a collision measurement 3D virtual reality program, which is based on WTK(in C). 
+    > Wrote hardware driver for joystick in C with Win32 API and integrated it with a 3D collision measurement system. Integrated a commercial eye tracker to the system to show the eye position in real-time.
 
 * ` Dec. 2011 - Aug. 2012` Scotoma field analysis for sight impaired drivers
 
-    > extended a visualization program in MATLAB to support new type of dataset. Helped design a mathematical model to measure the percentage of blocked object by scotoma field when driving, and designed the visualization scheme for it. The model helped to reveal important research conclusion that the percentage of blocked object correlated highly with the response rate of object detection by a subject.
+    > Helped designing a mathematical model to measure the percentage of blocked object by scotoma field for sight impaired drivers, and designed the visualization scheme for it. The model helped to reveal important research conclusion that the percentage of blocked object correlated highly with the response rate of object detection by a subject.
 
 ## Open source softwares
 
@@ -156,8 +179,6 @@ Qu Tang is a fifth year Ph.D student in Computer Engineering at Northeastern Uni
 * R package for converting confusion matrix to visual network graph
 
 * Tower Airdrop Android exergame
-
-__Tower Airdrop__ is a 2D exergame in Android to promote kid's physical activity. It used Box2D as physical engine, and used internal sensors to detect activity intensity and tilting. See source code. This app is experimental and has stopped further development.
 
 * A general-purpose visualization web app for synchronized view of multiple sensors, annotations and features
 
