@@ -70,6 +70,15 @@ Cutie works better with these hexo plugins:
 
 ## Changelog
 
+### 2017-12-17
+
+* Add configuration setting for instantclick. To avoid compatibility issue with many third party js codes, by default it is turned off. To enable it, add this in `_config.yml`.
+
+  ```yml
+  cutie:
+    instantclick: true
+  ```
+
 ### 2017-12-08
 
 * Adjust heading, inline code, list typography
@@ -185,6 +194,9 @@ cutie:
     weixin: 
     github: https://your/github/profile/link
     linkedin: https://your/linkedin/profile/link
+
+# Enable/disable instant click, if absent, it means disabled.
+  instantclick: false # or you can set it to be "true" to enable
 ```
 
 ### A set of default icons, referring using path(`/images/icon_name.svg`)
