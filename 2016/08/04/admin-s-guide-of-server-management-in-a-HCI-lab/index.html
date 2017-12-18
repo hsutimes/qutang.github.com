@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+  
+  
+  
+    
+  
+      <title>Admin's Guide of Server Management in a HCI Lab - QT is not Cutie</title>
+  
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/gridlex.min.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/share.min.css">
+<link rel="stylesheet" href="/css/lightgallery.css">
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/social-share.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+  <!-- include cookie.js -->
+  
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-38342303-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <header class="header">
+	<div class="header-title">
+		
+			<div class='header-logo'><a href='/'>
+				<img class='grow' src='/images/test-logo.jpg' />
+			</a></div>
+			<div class='header-text' >
+			    <h1>QT is not Cutie</h1>
+				<p><small>A personal website for Qu Tang....</small></p>
+			</div>
+		
+	</div>
+	<div id="header-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/resume/">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume/">
+							<span>Resume/简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/projects/">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/projects/">
+							<span>Projects</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes/">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes/">
+							<span>Notes</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/fun/">
+					<img src="/images/fun.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/fun/">
+							<span>Fun</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<article class="article" id="/2016/08/04/admin-s-guide-of-server-management-in-a-HCI-lab/" data-name='Admin's Guide of Server Management in a HCI Lab' data-version="-1">
+
+    <!-- Title -->
+
+    
+        
+            
+                
+                
+            
+        
+    
+
+    <div class='article-header'>
+         <div class='article-logo'>
+            <a href="/categories/notes/" data-no-instant>
+                <img src="/images/notes.svg" alt="">
+            </a>
+         </div>
+         <h1 class='article-title'>
+            <a href="/2016/08/04/admin-s-guide-of-server-management-in-a-HCI-lab/">
+                Admin's Guide of Server Management in a HCI Lab
+            </a>
+        </h1>
+    </div>
+   
+    <!-- Date and Author -->
+    <p>
+       	2016-08-04
+        by Qu Tang
+        
+    </p>
+    <p>
+        
+
+	
+		<label><a href="/tags/Linux/">#Linux</a></label>
+	
+
+	
+		<label><a href="/tags/Server-management/">#Server management</a></label>
+	
+
+	
+		<label><a href="/tags/Virtual-machine/">#Virtual machine</a></label>
+	
+
+
+    </p>
+	<hr />
+
+    <!-- Gallery -->
+    
+    
+
+    <!-- Content -->
+    <div class='article-content'>
+    <p>A guidebook summarizing what I’ve learned when working as a linux server administrator in an HCI lab.</p>
+
+    </div>
+    <hr />
+
+    <h2>Share and comment</h2>
+    <div class="social-share"></div>
+    
+        <div id="disqus_thread"></div>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    
+
+    
+    
+</article>
+  </div>
+
+  <footer class='footer'>
+    <div class='footer-logo'>
+        <span>QT</span>
+    </div>
+    <div class='footer-social'>
+        
+        
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/qutang' target='_blank' title='Find me on github' ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+                
+                    <div class='footer-social-item'><a href='https://www.linkedin.com/in/qutang' target='_blank' title='Find me on linkedin' ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+        
+    </div>
+    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> in 2017</p>
+    <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
+    <p>Theme <a href="http://qutang.github.io/2017/06/27/Hexo-theme-cutie/">Cutie</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
+</footer>
+
+  <br>
+
+  <div id="footer-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/resume/">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume/">
+							<span>Resume/简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/projects/">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/projects/">
+							<span>Projects</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes/">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes/">
+							<span>Notes</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/fun/">
+					<img src="/images/fun.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/fun/">
+							<span>Fun</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+
+  <script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<script src="/js/lightgallery.min.js"></script>
+<script type='text/javascript'>
+    lightGallery(document.getElementById('lightgallery'));
+</script>
+
+<script data-no-instant type='text/javascript'>
+changeLayoutOnTouchScreen();
+setVersionForCurrentPage();
+setVersionBadgeForIndexPages();
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>!function(t){function n(){for(var n=0;n<e.length;n++)(function(n){var e=n.getBoundingClientRect();return e.top>=0&&e.left>=0&&e.top<=(t.innerHeight||document.documentElement.clientHeight)})(e[n])&&function(t,n){var e=new Image,i=t.getAttribute("data-original");e.onload=function(){t.src=i,n&&n()},e.src=i}(e[n],function(){e.splice(n,n)})}var e=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));n(),t.addEventListener("scroll",n)}(this);</script></body>
+</html>

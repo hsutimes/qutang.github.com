@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+  
+  
+  
+    
+  
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/gridlex.min.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/share.min.css">
+<link rel="stylesheet" href="/css/lightgallery.css">
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/social-share.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+  <!-- include cookie.js -->
+  
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-38342303-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <header class="header">
+	<div class="header-title">
+		
+			<div class='header-logo'><a href='/'>
+				<img class='grow' src='/images/test-logo.jpg' />
+			</a></div>
+			<div class='header-text' >
+			    <h1>QT is not Cutie</h1>
+				<p><small>A personal website for Qu Tang....</small></p>
+			</div>
+		
+	</div>
+	<div id="header-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/resume/">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume/">
+							<span>Resume/简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/projects/">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/projects/">
+							<span>Projects</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes/">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes/">
+							<span>Notes</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/fun/">
+					<img src="/images/fun.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/fun/">
+							<span>Fun</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<section class="page">
+    <div class='page-meta'>
+        <p><small>Last updated: 2017-12-07<p><a href='/中文简历/'>中文</a></p><p><a href='index.pdf'><i class='fa fa-file-pdf-o fa-large' aria-hidden='true'></i> PDF </a></p></small></p>
+    </div>
+    <!-- Title -->
+    <div class='article-header'>
+         <h1 class='article-title'>
+            <a href="/resume/index.html">
+                Curriculum Vitae
+            </a>
+        </h1>
+    </div>
+	<hr />
+    <!-- Content -->
+    <div class='article-content'>
+    <h1 id="Qu-Tang"><a href="#Qu-Tang" class="headerlink" title="Qu Tang"></a><strong>Qu Tang</strong></h1><p><a href="http://www.google.com/recaptcha/mailhide/d?k=01hQSjBLMxACjwbK_AGELOLg==&amp;c=WlYLqRnTu6ivdRewzazpnGXbp0Q42_mzU_5iu5dk6hY=" target="_blank" rel="noopener">…@gmail.com</a></p>
+<ul>
+<li><strong>Office address</strong>:<br>Mobile Health Research Group,<br>9th Floor, 177 Huntington Avenue,<br>Northeastern University,<br>Boston, MA, 02115, US</li>
+<li><strong>Mailing address</strong>:<br>910-177,<br>Huntington Avenue 360,<br>Northeastern University,<br>Boston, MA, 02115, US</li>
+</ul>
+<h2 id="Bio"><a href="#Bio" class="headerlink" title="Bio"></a>Bio</h2><p>Qu Tang is a fifth year Ph.D student in Computer Engineering at Northeastern University (NU), Boston. He is now working as a research assistant with Professor <a href="http://www.ccs.neu.edu/home/intille/" target="_blank" rel="noopener">Stephen Intille</a> in <a href="http://mhealth.ccs.neu.edu/" target="_blank" rel="noopener"><strong>Mobile Health Research Group</strong></a> at NU. His primary research interest is <strong>mobile sensing</strong>, <strong>real-time machine learning for activity recognition</strong>, and <strong>human-in-the-loop machine learning</strong>. He is interested in applying engineering and computer science technologies to measure, monitor and improve personal health. Qu Tang got his M.S. degree in Electrical Engineering at Northeastern in 2013 and his B.E. degree in Electrical Engineering at University of Eletronic Science and Technology of China (UESTC) in 2010.</p>
+<h2 id="Education"><a href="#Education" class="headerlink" title="Education"></a>Education</h2><ul>
+<li><strong>2013-Present</strong> Ph.D Candidate in Computer Engineering @ <em>Northeastern University, Boston, US</em></li>
+<li><strong>2011-2013</strong> Master of Science Eletrical Engineering @ <em>Northeastern University</em><ul>
+<li>Master thesis: Automatic smoking detection with wrist accelerometers</li>
+<li>Courses: Digital Signal Processing, Computer Vision, Machine Learning, Linear System Analysis, Computer Simulation and Evaluation, Mobile Application Development in Android, Adaptive Filtering, Time Series Analysis</li>
+</ul>
+</li>
+<li><strong>2006-2010</strong> Bachelor of Engineering Eletrical Science and Technology @ <em>UESTC, Chengdu, China</em><ul>
+<li>Scholarships: National Scholarship of China, 2007-2009</li>
+</ul>
+</li>
+</ul>
+<h2 id="Publications"><a href="#Publications" class="headerlink" title="Publications"></a>Publications</h2><h3 id="2017"><a href="#2017" class="headerlink" title="2017"></a>2017</h3><ul>
+<li>D. John, <strong>Q. Tang</strong>, F. Albinali, and S.S. Intille, A monitor-independent movement summary to harmonize accelerometer data processing. In: MSSE; 2017 (Submitted). <a href="">Download paper</a>, <a href="https://github.com/qutang/MIMSunit" target="_blank" rel="noopener">source code</a>.</li>
+</ul>
+<h3 id="2016"><a href="#2016" class="headerlink" title="2016"></a>2016</h3><ul>
+<li>Houston KE, Bowers AR, Fu X, Liu R, Goldstein RB, Churchill J, Wiegand JP, Soo T, <strong>Tang Q</strong>, Peli E. A Pilot Study of Perceptual-Motor Training for Peripheral Prisms. Transl Vis Sci Technol 2016;5(1):9. <a href="http://tvst.arvojournals.org/article.aspx?articleid=2496592" target="_blank" rel="noopener">Download paper</a>.</li>
+</ul>
+<h3 id="2014"><a href="#2014" class="headerlink" title="2014"></a>2014</h3><ul>
+<li>Goodwin MS, Haghighi M, <strong>Tang Q</strong>, Akcakaya M, Erdogmus D, Intille S. Moving towards a real-time system for automatically recognizing stereotypical motor movements in individuals on the autism spectrum using wireless accelerometry. In: Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM; 2014 p. 861–72. <a href="https://dl.acm.org/citation.cfm?doid=2632048.2632096" target="_blank" rel="noopener">Download paper</a>.</li>
+<li><strong>Tang Q</strong>, Vidrine DJ, Crowder E, Intille SS. Automated Detection of Puffing and Smoking with Wrist Accelerometers. In: Proceedings of the 8th International Conference on Pervasive Computing Technologies for Healthcare. ICST, Brussels, Belgium, Belgium: ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering); 2014 p. 80–7. <a href="https://dl.acm.org/citation.cfm?id=2686905" target="_blank" rel="noopener">Download paper</a>.</li>
+</ul>
+<h2 id="Teaching-experience"><a href="#Teaching-experience" class="headerlink" title="Teaching experience"></a>Teaching experience</h2><ul>
+<li><strong>Spring, 2016</strong> Teaching Assistant <em>Northeastern University, Boston, US</em><ul>
+<li>CS4300: Computer Graphics</li>
+</ul>
+</li>
+</ul>
+<h2 id="Research-experience"><a href="#Research-experience" class="headerlink" title="Research experience"></a>Research experience</h2><ul>
+<li><p><strong>Jan. 2013 - Present</strong> Research Assistant <em>Mobile Health Research Group @ Northeastern University, Boston, US</em></p>
+<ul>
+<li>Designed machine learning algorithms for activity recognition. Published 2 conference papers and submitted 1 journal paper by far. Used Random Forest, SVM and decision tree algorithms. Worked on problems like smoking detection, autism stereotypical motion detection, posture and complex human activity recognition.</li>
+<li>Designed data processing algorithm (MIMS algorithm) for physical activity summary. Submitted 1 journal paper by far.</li>
+<li>Developed a mobile sensing app SPADES that can collect data from smartwatch and phone on Android. Developed a contextua sensitive ecological momentary assessment app (LML) on Android. SPADES app was deployed over 50 participants over 3 months with reliable 24/7 running and collected over 250GB data (sensors, phone logging and GPS). LML app will be used in a public health research project that involves over 200 participants.</li>
+<li>Working on NHANES population study to process 7-day accelerometer data (for summary, visualization and clean up) for over 10000 individuals.</li>
+<li>Developed 2 internal visualization tools as web app (using javascript) and R shiny app to support multi-sensor synchronized visualization.</li>
+<li>Developed 2 R packages to standardize internal data processing and visualization, and 1 R package for MIMS algorithm.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Internships"><a href="#Internships" class="headerlink" title="Internships"></a>Internships</h2><ul>
+<li><p><strong>Dec. 2011 - Aug. 2012</strong> Cooperative Education (COOP) Student <em>Vision Rehabilitation Laboratory @ Schepens Eye Research Institute, Boston, US</em></p>
+<ul>
+<li>Extended a prism glass training app using Visual Basic and C#. Completed more than 10 major feature requests and 50 bug fixes. Led to publication in 2016.</li>
+<li>Wrote hardware driver for joystick in C with Win32 API and integrated it with a 3D collision measurement system. Integrated a commercial eye tracker to the system to show the eye position in real-time.</li>
+<li>Extended a MATLAB based eye tracking analysis program to suport new type of dataset. Designed the strategy of visualization to help analyzing the impact of scotoma field of eyesight during driving.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Other-experiences"><a href="#Other-experiences" class="headerlink" title="Other experiences"></a>Other experiences</h2><ul>
+<li><p><strong>Sep. 2014 - Present</strong> <strong>Linux System Administrator</strong> <em>Mobile Health Research Group @ Northeastern University, Boston, US</em></p>
+<ul>
+<li>Wrote the lab’s first system administration guidance (58 pages), designed workflows for system debugging, security managment, VM management and user authorization.</li>
+<li>Created, configured 8 Virtual Machines running with QEMU and LVM, VMs are used for hosting wordpress websites or research projects for receiving and processing data from mobile phones.</li>
+<li>Mail, SSH, Apache and Tomcat service management. Resolved 1 DDoS vulnerability of wordpress and several ubuntu system bugs which had led to slow connection, connection time dropped down by about 80%.</li>
+</ul>
+</li>
+<li><p><strong>Sep. 2014 - Dec. 2014</strong> <strong>Ph.D Seminar Coordinator</strong> <em>Personal Health Informatics Ph.D Program @ Northeastern University, Boston, US</em></p>
+<ul>
+<li>Organized weekly Ph.D seminar (7-8 times per semester) for PHI Ph.D program of Northeastern University. Average attendance is 10-20 people. PHI seminar series.</li>
+<li>Selected, invited and coordinated with all the speakers (mainly faculties and researchers from both inside and outside campus), and advertised the events throughout the campus.</li>
+<li>Acted as the host of all seminars.</li>
+</ul>
+</li>
+</ul>
+<h2 id="Projects"><a href="#Projects" class="headerlink" title="Projects"></a>Projects</h2><ul>
+<li><p><strong>Sep. 2017 - Present</strong> Personalization of activity recognition algorithm</p>
+<blockquote>
+<p>This is a series of ongoing projects I am working on for my PhD dissertation. I try to explore solutions to several practical problems during algorithm personalization. Such as “how to deal with sensor orientation discrepancy and dynamic change?”, “how to expand a machine learning model to more sensors on the fly?” and “how to use multi-day unlabled or sparsely labeled personal data?”.</p>
+</blockquote>
+</li>
+<li><p><strong>Sep. 2017 - Present</strong> NHANES population study data processing</p>
+<blockquote>
+<p>“The National Health and Nutrition Examination Survey (NHANES) is a program of studies designed to assess the health and nutritional status of adults and children in the United States. The survey is unique in that it combines interviews and physical examinations.” – CDC.gov</p>
+<p>The whole dataset involves over 10000 US individuals each with 7-day’s wrist accelerometer data sampled at 80 Hz.</p>
+<p>I am helping developing the standardized protocol for data quality check and screening, involving various statistical, signal processing and machine learning techniques.</p>
+<p>I am helping implementing data processing algorithms for data format conversion and activity summary. I successfully validated the MIMS unit algorithm over around 700 individuals from NHANES dataset and will expand the validation to the entire NHANES dataset.</p>
+</blockquote>
+</li>
+<li><p><strong>Apr. 2017 - Oct. 2017</strong> The impact of single and dual sensor placements for posture and daily activity recognition</p>
+<blockquote>
+<p>This project aims to explore the impact of single or dual sensor placements for posture and daily activity recognition. To our knowledge, this paper is the first to systematically analyze 7 single and 21 dual different sensor placements for posture and activity recognition.</p>
+<p>I developed and implemented the machine learning pipeline. I proposed a set of new sensor orientation related features which helped improving performance for over 30% in both tasks.I also designed all validation experiments across different combination of sensor locations. </p>
+<p>I processed over 20GB dataset (with 53 participants, each with 3 hour data containing 17 complex daily activites from 7 different accelerometers).</p>
+<p>A journal publication related to this project is currently under review.</p>
+</blockquote>
+</li>
+<li><p><strong>Sep. 2016 - Present</strong> “Log My Life” public health research study</p>
+<blockquote>
+<p>This 2-year public health project aims to collect ecological momentary assessment (EMA) surveys and geological data using Android app for a week to analyze the correlation between support housing and the sexual, drug and alcohol behaviors of homeless teenagers. The study aims to deploy over 200? participants.</p>
+<p>I worked on developing and maintaining the Android app. I designed new scheduling logic that supports dual surveys with different schedules. I also developed new conditioning and looping routing logics which are unavailable in most EMA frameworks (e.g. Apple’s ResearchKit and Google’s StudyKit).</p>
+</blockquote>
+</li>
+<li><p><strong>Sep. 2015 - Nov. 2017</strong> A Monitor Independent Movement Summary (MIMS) unit for human activity measurement</p>
+<blockquote>
+<p>This project aims to develop a new signal processing algorithm to summarize raw accelerometer data into epochs that can work consistently across devices. Activity summary can measure the intensity, energy expenditure and Metabolic rate for physical activities. </p>
+<p>The algorithm performs at least 30% more consistent across devices than other summary agorithms (e.g. “Biobank ENMO” and “Actigraph’s activity count”) by introducing an “extrapolation” step to fix distorted signal for low dynamic range devices and ensuring a consistent interpolation and filtering mechanism across devices with different sampling rates.</p>
+<p>I developed and implemented the entire signal processing algorithm. </p>
+<p>A journal paper has been submitted and currently under review.</p>
+<p>An open sourced R package has been released.</p>
+</blockquote>
+</li>
+<li><p><strong>Jan. 2015 - Aug. 2016</strong> “SPADES”: measure and collect physical activity and context data through mobile sensing</p>
+<blockquote>
+<p>This project aims to collect physical activity (accelerometers) and contextual (phone, watch logging and location) data with various annotation methods and sensory setup. The complete dataset involves 50 participants each has over 10GB data from three sessions.</p>
+<p>The annotation methods include “expert real-time annotations”, “memory recall annotations” and “EMA survey annotations”. The dataset involves at most 7 wearable accelerometers, smart watch, smart phones and GPS devices.</p>
+<p>I developed and maintained the Android app. I implemented a complex periodic alarming system between smart watch and phone to ensure collecting high sampling frequency (50Hz, 100Hz) sensory data. The app is designed to run 24/7 for at least 3 months.</p>
+<p>I developed and implemented the protocol and associated tools to visualize, convert and clean up the dataset.</p>
+</blockquote>
+</li>
+<li><p><strong>Sep. 2013 - Jan. 2014</strong> A cross-study validation for machine learning algorithms to detect stereotypical motor movement </p>
+<blockquote>
+<p>“‘Lower-level’ stereotypical behaviors tend to characterize more severely affected and cognitively impaired individuals (who has Autism), including stereotypical motor movements (SMM). Such behavior can lead to object or self injury. SMM can be detectable by wearable motion sensor because of their repetitive and fixated patterns.</p>
+<p>This project extends previous published work to validate machine learning algorithms and feature sets across two studies conducted apart by two years, which to our knowledge, is the first paper to do such follow-up experiment in the domain.</p>
+<p>I worked on implementing decision tree algorithms and conducting half of the experiments.</p>
+<p>A conference paper was published in 2014.</p>
+</blockquote>
+</li>
+<li><p><strong>Sep. 2013 - Dec. 2013</strong> Tower Airdrop: an Android exercise game</p>
+<blockquote>
+<p>Tower Airdrop is a 2D exergame in Android to promote kid’s physical activity. It is inspired by the classic box stacking game.</p>
+<p>It used Box2D as physical engine to simulate the airdropping of boxes. The game borrowed the idea of “interval training”, where vigorous “shaking” is used to open the parachute followed by a concise control of “tilting” to stack the dropped box.</p>
+<p>I proposed the original idea and developed the physical engine system, tilting and shaking integration, and scoring and leveling-up mechanism.</p>
+<p>The game is available through Google Play Store.</p>
+<p>This project is open sourced.</p>
+</blockquote>
+</li>
+</ul>
+<ul>
+<li><p><strong>Sep. 2012 - Dec. 2013</strong> Puffing and smoking detection using wrist accelerometers</p>
+<blockquote>
+<p>Smoking cessation is important for longevity and disease prevention. Using wearable sensors to monitor smoking and puffing provides a low cost way to help smoking cessation.</p>
+<p>This pilot project aims to detect puffings and smoking using wrist accelerometers on a dataset with 7 participants (2 hour sessions for each).</p>
+<p>I designed a hierarchical machine learning model to detect puffing first using random forest and then infer smoking episodes using time series moving average modeling. The results show better performance (F1-score: 0.79) over prior work yet reveals significant divergence across individual.</p>
+<p>A conference paper was published in 2014.</p>
+</blockquote>
+</li>
+<li><p><strong>Dec. 2011 - Aug. 2012</strong> Prism glasses training desktop app</p>
+<blockquote>
+<p>Prism glasses are used to help vision impaired people to see objects outside their vision field. Using prism glasses requires training and designing easy-to-use prism glasses training app is important for the promotion of this low-cost technology. </p>
+<p>I extended an existing prism glasses training app written in VB and C# in three major ways: a) I helped turning the training app into a first-person-shooting game, b) I extended the program to use live videos during playing and c) I identified and fixed a critical bug caused by mistakes in coordinate transformation between different screens that may severely affect the result accuracy.</p>
+<p>A journal paper was published in 2016.</p>
+</blockquote>
+</li>
+<li><p><strong>Dec. 2011 - Aug. 2012</strong> 3D virtual mall collision measurement system</p>
+<blockquote>
+<p>Vision impaired people may accidentally collide with close-by objects or pedestrians because of the scotoma field in their eye sight. Analyzing the relationship between people’s vision field, glare point and collision incidences may help developing tools (e.g. prism glasses) to assist vision impaired people avoiding collision. </p>
+<p>This project creates a virtual reality to simulates a first-person view of 3D virtual mall walking scene with objects or pedestrians randomly appearing at close-by positions, then asks participants to provide trinary feedbacks on whether they feel they will collide with them, and integrates an eye tracking system to get their glare point at the same time.</p>
+<p>I wrote the hardware driver for the joystick controller in C which was used to capture user’s trinary feedbacks. I also integrated a commercial eye tracker with the system and made the system to show the eye position in real-time on consoler’s screen.</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="Open-sourced-softwares"><a href="#Open-sourced-softwares" class="headerlink" title="Open sourced softwares"></a>Open sourced softwares</h2><ul>
+<li><p>R package for processing, visualizing accelerometer data</p>
+</li>
+<li><p>R package for computing MIMS unit</p>
+</li>
+<li><p>R package for converting confusion matrix to visual network graph</p>
+</li>
+<li><p>Tower Airdrop Android exergame</p>
+</li>
+<li><p>A general-purpose visualization web app for synchronized view of multiple sensors, annotations and features</p>
+</li>
+</ul>
+<h2 id="References"><a href="#References" class="headerlink" title="References"></a>References</h2><ul>
+<li><strong>Jan. 2013-Present</strong> Dr. Stephen Intille (M.S. Thesis &amp; Ph.D supervisor, Associate Professor @ <em>College of Computer and Information Science, Northeastern University, 360 Huntington Ave., Boston, MA, 02115</em></li>
+<li><strong>Dec. 2011-Aug. 2012</strong> Dr. Eli Peli (Coop supervisor, Professor and Senior Scientist) @ <em>Schepens Eye Research Institute, 20 Staniford St, Boston, MA, 02114</em></li>
+</ul>
+
+    </div>
+    <hr />
+    <div class="social-share"></div>
+</section>
+  </div>
+
+  <footer class='footer'>
+    <div class='footer-logo'>
+        <span>QT</span>
+    </div>
+    <div class='footer-social'>
+        
+        
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/qutang' target='_blank' title='Find me on github' ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+                
+                    <div class='footer-social-item'><a href='https://www.linkedin.com/in/qutang' target='_blank' title='Find me on linkedin' ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+        
+    </div>
+    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> in 2017</p>
+    <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
+    <p>Theme <a href="http://qutang.github.io/2017/06/27/Hexo-theme-cutie/">Cutie</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
+</footer>
+
+  <br>
+
+  <div id="footer-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/resume/">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume/">
+							<span>Resume/简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/projects/">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/projects/">
+							<span>Projects</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes/">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes/">
+							<span>Notes</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/fun/">
+					<img src="/images/fun.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/fun/">
+							<span>Fun</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+
+  <script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<script src="/js/lightgallery.min.js"></script>
+<script type='text/javascript'>
+    lightGallery(document.getElementById('lightgallery'));
+</script>
+
+<script data-no-instant type='text/javascript'>
+changeLayoutOnTouchScreen();
+setVersionForCurrentPage();
+setVersionBadgeForIndexPages();
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>!function(t){function n(){for(var n=0;n<e.length;n++)(function(n){var e=n.getBoundingClientRect();return e.top>=0&&e.left>=0&&e.top<=(t.innerHeight||document.documentElement.clientHeight)})(e[n])&&function(t,n){var e=new Image,i=t.getAttribute("data-original");e.onload=function(){t.src=i,n&&n()},e.src=i}(e[n],function(){e.splice(n,n)})}var e=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));n(),t.addEventListener("scroll",n)}(this);</script></body>
+</html>

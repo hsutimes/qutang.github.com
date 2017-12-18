@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  
+  
+  
+  
+    
+  
+  
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+  <link rel="stylesheet" href="/css/normalize.css">
+<link rel="stylesheet" href="/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/gridlex.min.css">
+<link rel="stylesheet" href="/css/skeleton.css">
+<link rel="stylesheet" href="/css/theme.css">
+<link rel="stylesheet" href="/css/share.min.css">
+<link rel="stylesheet" href="/css/lightgallery.css">
+
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+  </script>
+  <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/social-share.min.js"></script>
+    <script src="/js/theme.js"></script>
+
+  <!-- include cookie.js -->
+  
+  
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-38342303-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
+<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+<body style="display: flex; flex-direction: column; min-height: 100vh;">
+  <header class="header">
+	<div class="header-title">
+		
+			<div class='header-logo'><a href='/'>
+				<img class='grow' src='/images/test-logo.jpg' />
+			</a></div>
+			<div class='header-text' >
+			    <h1>QT is not Cutie</h1>
+				<p><small>A personal website for Qu Tang....</small></p>
+			</div>
+		
+	</div>
+	<div id="header-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/resume/">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume/">
+							<span>Resume/简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/projects/">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/projects/">
+							<span>Projects</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes/">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes/">
+							<span>Notes</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/fun/">
+					<img src="/images/fun.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/fun/">
+							<span>Fun</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+</header>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div style="flex: 1;">
+      <style>
+    body {
+        background-color: white;
+    }
+</style>
+
+<section class="page">
+    <div class='page-meta'>
+        <p><small>最后更新: 2017-12-07<p><a href='/resume/'>English</a></p><p><a href='index.pdf'><i class='fa fa-file-pdf-o fa-large' aria-hidden='true'></i> PDF </a></p></small></p>
+    </div>
+    <!-- Title -->
+    <div class='article-header'>
+         <h1 class='article-title'>
+            <a href="/中文简历/index.html">
+                个人简历
+            </a>
+        </h1>
+    </div>
+	<hr />
+    <!-- Content -->
+    <div class='article-content'>
+    <h1 id="唐曲"><a href="#唐曲" class="headerlink" title="唐曲"></a>唐曲</h1><p><a href="http://www.google.com/recaptcha/mailhide/d?k=01hQSjBLMxACjwbK_AGELOLg==&amp;c=WlYLqRnTu6ivdRewzazpnGXbp0Q42_mzU_5iu5dk6hY=" target="_blank" rel="noopener">…@gmail.com</a></p>
+<ul>
+<li><strong>工作地址</strong>:<br>Mobile Health Research Group,<br>9th Floor, 177 Huntington Avenue,<br>Northeastern University,<br>Boston, MA, 02115, US</li>
+<li><strong>邮寄地址</strong>:<br>910-177,<br>Huntington Avenue 360,<br>Northeastern University,<br>Boston, MA, 02115, US</li>
+</ul>
+<h2 id="个人简介"><a href="#个人简介" class="headerlink" title="个人简介"></a>个人简介</h2><p>唐曲先生就读于美国波士顿东北大学计算机工程（Computer Engineering）专业，是一名在读博士生。他同时在<a href="http://www.ccs.neu.edu/home/intille/" target="_blank" rel="noopener">Stephen Intille</a>教授的<a href="http://mhealth.ccs.neu.edu/" target="_blank" rel="noopener">实验室</a>做研究助理。他的研究方向主要是移动传感（Mobile sensing），实施机器学习和人类身体活动识别 （Real-time machine learning for activity recognition）以及交互式机器学习（Human-in-the-loop machine learning）。他着眼于将工程与计算机科学技术实际运用到个人健康测量，监控以及行为干预领域。他于2013年获得波士顿东北大学电气工程（Electrical Engineering）硕士学位，于2010年获得电子科技大学电子科学与技术学士学位。</p>
+<h2 id="教育经历"><a href="#教育经历" class="headerlink" title="教育经历"></a>教育经历</h2><ul>
+<li><strong>2013年至今</strong> 博士在读，计算机工程（Computer Engineering）@ <em>美国波士顿东北大学</em></li>
+<li><p><strong>2011年-2013年</strong> 硕士，电气工程（Electrical Engineering） @ <em>美国波士顿东北大学</em></p>
+<ul>
+<li>硕士论文: 基于腕带加速度计的自动吸烟检测（Automatic smoking detection with wrist accelerometers）</li>
+<li>主要课程: 数字信号处理（Digital Signal Processing）, 计算机视觉（Computer Vision）, 机器学习（Machine Learning）, 线性系统分析（Linear System Analysis）, 计算机模拟与评估（Computer Simulation and Evaluation）, 移动应用设计与开发（Mobile Application Development in Android）, 自适应滤波（Adaptive Filtering）, 时序分析（Time Series Analysis）</li>
+</ul>
+</li>
+<li><p><strong>2006年-2010年</strong> 工学学士，电子科学与技术 @ <em>电子科技大学，成都</em></p>
+<ul>
+<li>奖学金: 国家奖学金，2007年至2009年；人民一等奖学金，2006年</li>
+</ul>
+</li>
+</ul>
+<h2 id="论文与其他出版物"><a href="#论文与其他出版物" class="headerlink" title="论文与其他出版物"></a>论文与其他出版物</h2><h3 id="2017"><a href="#2017" class="headerlink" title="2017"></a>2017</h3><ul>
+<li>D. John, <strong>Q. Tang</strong>, F. Albinali, and S.S. Intille, A monitor-independent movement summary to harmonize accelerometer data processing. In: MSSE; 2017 (In submission). <a href="">下载论文</a>, <a href="https://github.com/qutang/MIMSunit" target="_blank" rel="noopener">源代码</a>.</li>
+</ul>
+<h3 id="2016"><a href="#2016" class="headerlink" title="2016"></a>2016</h3><ul>
+<li>Houston KE, Bowers AR, Fu X, Liu R, Goldstein RB, Churchill J, Wiegand JP, Soo T, <strong>Tang Q</strong>, Peli E. A Pilot Study of Perceptual-Motor Training for Peripheral Prisms. Transl Vis Sci Technol 2016;5(1):9. <a href="http://tvst.arvojournals.org/article.aspx?articleid=2496592" target="_blank" rel="noopener">下载论文</a>.</li>
+</ul>
+<h3 id="2014"><a href="#2014" class="headerlink" title="2014"></a>2014</h3><ul>
+<li>Goodwin MS, Haghighi M, <strong>Tang Q</strong>, Akcakaya M, Erdogmus D, Intille S. Moving towards a real-time system for automatically recognizing stereotypical motor movements in individuals on the autism spectrum using wireless accelerometry. In: Proceedings of the 2014 ACM International Joint Conference on Pervasive and Ubiquitous Computing. ACM; 2014 p. 861–72. <a href="https://dl.acm.org/citation.cfm?doid=2632048.2632096" target="_blank" rel="noopener">下载论文</a>.</li>
+<li><strong>Tang Q</strong>, Vidrine DJ, Crowder E, Intille SS. Automated Detection of Puffing and Smoking with Wrist Accelerometers. In: Proceedings of the 8th International Conference on Pervasive Computing Technologies for Healthcare. ICST, Brussels, Belgium, Belgium: ICST (Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering); 2014 p. 80–7. <a href="https://dl.acm.org/citation.cfm?id=2686905" target="_blank" rel="noopener">下载论文</a>.</li>
+</ul>
+<h2 id="教学经历"><a href="#教学经历" class="headerlink" title="教学经历"></a>教学经历</h2><ul>
+<li><strong>2016年春季学期</strong> 助教 <em>美国波士顿东北大学</em><ul>
+<li>CS4300: 计算机图形学（Computer Graphics)</li>
+</ul>
+</li>
+</ul>
+<h2 id="研究经历"><a href="#研究经历" class="headerlink" title="研究经历"></a>研究经历</h2><ul>
+<li><strong>2013年一月至今</strong> 研究助理 <em>移动健康实验室 @ 美国东北大学</em><ul>
+<li>为身体活动识别设计机器学习算法。迄今为止在相关领域发表了两篇顶级会议论文，以及一篇顶级期刊论文。主要应用了随机森林，支持向量机和决策树等算法。解决的实际问题包括吸烟行为探测，自闭症患者的刻板性运动识别，身体姿态以及复杂人类活动识别。</li>
+<li>设计了一种用于归纳人类身体活动强度的数据处理算法（MIMS）。迄今为止在相关领域发表了一篇顶级期刊论文。</li>
+<li>设计并开发了基于安卓的移动传感应用（SPADES），被用于<em>长时间不间断</em>收集智能手机和手表的传感器以及位置数据。设计并开发了基于安卓的利用场景感知进行生态瞬息评估的应用（LML）。SPADES应用被用于一个中型数据采集项目（50人，每人长达3个月的不间断数据采集，总数据量达250GB）。LML应用将被用于一个超过200人参与的公共卫生研究项目。</li>
+<li>参与了一个全美范围的健康普查项目（NHANES）的传感器数据处理部分。这个项目包括超过10000名美国民众，总数据量达到50TB。</li>
+<li>使用javascript和R语言设计并开发了一系列内部使用的数据可视化工具。这些工具能够实现多传感器的同步可视化。</li>
+<li>设计并开发了两个R语言的开源库用于标准化内部数据处理流程和可视化。以及一个关于MIMS算法的R语言开源库。</li>
+</ul>
+</li>
+</ul>
+<h2 id="实习"><a href="#实习" class="headerlink" title="实习"></a>实习</h2><ul>
+<li><p><strong>2011年12月至2012年8月</strong> 研究实习生 <em>Schepens眼科学研究所，哈佛大学</em></p>
+<ul>
+<li>扩展了一个用于训练视力受损病人使用棱镜眼镜的程序（基于Visual Basic和C#）。实习期间完成了超过10个主要需求的实现和超过50个的bug修复。这个训练程序已于2016年作为一篇顶级期刊论文的一部分发表。</li>
+<li>用C开发了一个兼容Win32 API的操纵杆控制器硬件驱动程序，并且结合眼球跟踪系统，把他们集成到了一个基于WTK（C语言）库的三维碰撞模拟程序。  </li>
+<li>扩展了一个基于MATLAB的可视化程序来支持新的数据类型。用回归分析协助设计了一个数据模型用于测量在驾驶汽车过程中，被视界盲点遮挡的物体百分比。该模型有助于揭示被遮挡物体的百分比与受试者感知到被遮挡物体的响应速率高度相关重要的研究结论。</li>
+</ul>
+</li>
+</ul>
+<h2 id="其他经历"><a href="#其他经历" class="headerlink" title="其他经历"></a>其他经历</h2><ul>
+<li><p><strong>2014年9月至今</strong> <strong>Linux服务器管理员</strong> <em>移动健康实验室 @ 美国东北大学</em></p>
+<ul>
+<li>写了实验室的第一个系统管理员的指南（58页），设计了关于服务器管理，调试，安全管理，虚拟机管理以及授权管理的工作流程。</li>
+<li>创建，配置了8个基于 QEMU和LVM运行的Linux虚拟机，虚拟机用于托管WordPress网站或基于Tomcat,apache的研究项目，主要用于从手机接收和处理数据。</li>
+<li>配置及管理邮件，SSH，Apache和Tomcat服务。 检测并修复了一个WordPress的DDoS安全漏洞，以及一个Ubuntu系统的严重漏洞，该漏洞导致了缓慢的网络响应，把响应时间缩短了约80%。</li>
+</ul>
+</li>
+<li><p><strong>2014年9月至2014年12月</strong> <strong>博士研讨会负责人</strong> <em>个人健康信息学博士项目 @ 美国波士顿东北大学</em></p>
+<ul>
+<li>为东北大学博士PHI程序组织周博士研讨会（每学期7-8次）。平均上座率约为10-20人。 PHI系列研讨会.</li>
+<li>负责选择，邀请并介绍所有嘉宾（主要是院系和来自其他学校或者研究所的讲授，研究员）。并且负责整个研讨会的宣传和广告。</li>
+<li>研讨会主持人。</li>
+</ul>
+</li>
+</ul>
+<h2 id="参与项目简介"><a href="#参与项目简介" class="headerlink" title="参与项目简介"></a>参与项目简介</h2><ul>
+<li><p><strong>2017年9月至今</strong> 身体活动识别算法的个性化研究</p>
+<blockquote>
+<p>这是一系列我博士论文的主要研究项目。我尝试解决在把身体活动识别算法应用于实际场景时可能遇到的问题。比如“怎样保证传感器朝向的改变不会影响算法的准确度？”， “怎么在一个已经训练完成的机器学习模型上添加新的传感器？”，以及“怎么使用没有标注或者只有少量标注的周期性时序信息来优化模型？”。</p>
+</blockquote>
+</li>
+<li><p><strong>2017年9月至今</strong> NHANES人口健康普查项目的数据处理</p>
+<blockquote>
+<p>“全美健康及营养普查是一个由多项旨在评估美国境内成人及儿童健康和营养状况的研究项目组成的大型复合项目。项目的特别之处在于它使用了包括面试，体检，问卷，传感器等多维的数据收集方式。” – 美国食药监</p>
+<p>整个项目收集了超过10000个普通美国民众一周的腕带加速度计数据，采样率高达80Hz。数据总量达到至少50TB。</p>
+<p>我帮助设计并开发了数据处理，质量检查以及数据清洗的标准化方案。 这一方案应用了多种统计，数据处理以及机器学习的方法。</p>
+<p>我也帮助开发了用于数据类型转化的一系列程序，并且成功在这个大型项目中验证了MIMS算法的稳定性，并将其用于前述提到的数据处理方案。</p>
+</blockquote>
+</li>
+<li><p><strong>2017年4月至2017年10月</strong> 关于单个或两个不同身体部位的传感器组对姿态及日常活动识别算法的影响</p>
+<blockquote>
+<p>这个项目是为了探索在不同身体部位，单个或两个传感器组对身体姿态和日常活动识别的影响。据我们所知，这是第一篇系统分析7个身体部位，21种身体部位对身体活动识别影响的论文。</p>
+<p>我设计并实现了整个机器学习流程。通过使用新的关于传感器朝向的特征，新的算法的F1 score表现提高了超过30%。我也设计了所有论文中使用的交叉比较验证的实验。</p>
+<p>我处理了超过20GB的数据，包括53个个体的数据集。每个数据集包含3小时左右的7通道加速度计数据。每个数据集包括超过17中复杂的日常身体活动。</p>
+<p>与这个项目有关的一篇顶级期刊论文正在审核过程。</p>
+</blockquote>
+</li>
+<li><p><strong>2016年9月至今</strong> “Log My Life”公共卫生研究项目</p>
+<blockquote>
+<p>这是个为期两年的公共卫生研究项目，计划参与人数超过200人。通过搜集实时采样的问卷以及位置数据来分析青少年收容所对流浪青少年的毒品，酒精以及性行为的影响。</p>
+<p>我主要负责设计和开发了用于数据搜集的安卓手机应用。我设计了一套新的时序逻辑来支持两种以上不同时序的实时采样问卷。我也开发了基于条件和循环逻辑的更复杂的问卷形式。这些新特性远远超过了大多数商用的实时采样问卷应用（比如苹果公司的ResearchKit，谷歌公司的StudyKit）。</p>
+</blockquote>
+</li>
+<li><p><strong>2015年9月至2017年11月</strong> 一个用于身体活动量测量的独立于特定加速度计的单位运动量算法</p>
+<blockquote>
+<p>这个项目旨在使用信号处理技术开发一种新的单位运动量算法（别称为MIMS算法），使它不受特定加速度计的参数影响。单位时间的身体活动量可以用来测量身体活动的强度，能量消耗以及新陈代谢率。</p>
+<p>MIMS算法在结果的一致性上优于已知算法（比如“Biobank ENMO”算法以及“Actigraph公司的运动计量（activity count）算法）超过30%。MIMS算法巧妙利用Local spline regression来修复容易受损的低动态域加速度计信号。新算法强调在不同采样率的加速度计上运用统一的插值和滤波算法。</p>
+<p>我设计，开发并测试了整个算法。</p>
+<p>一篇有关的顶级期刊论文正在论文复审。</p>
+<p>MIMS算法已经作为R语言的工具库开源。</p>
+</blockquote>
+</li>
+<li><p><strong>2015年1月至2016年8月</strong> “SPADES”：通过移动传感测量并搜集身体活动及场景数据</p>
+<blockquote>
+<p>这个项目旨在利用多种标注方法和多种传感器测量并搜集关于身体活动和所在场景的数据。搜集的完整数据集包含50人总量超过500GB的三个月加速度计，GPS，手机及智能手表日志数据，以及三种不同的标注：实时专家标注，用户回忆以及实时采样问卷。</p>
+<p>我设计并开发了用于数据搜集的安卓手机应用。通过复杂的周期性时钟系统，我成功实现了24小时不间断采集高采样率信号（50Hz, 100Hz），并且稳定运行应用超过3个月。</p>
+<p>我同时开发了整个数据采集的后处理流程，以及相关的数据类型转换，可视化，清理程序。</p>
+</blockquote>
+</li>
+<li><p><strong>2013年9月至2014年1月</strong> 自闭症患者刻板性运动识别算法的多数据集交叉验证</p>
+<blockquote>
+<p>底层的刻板行为可以用来表征在认知能力上有严重缺陷的病人（比如自闭症患者）。底层刻板行为的其中一种形式就是刻板性运动。这种行为可能导致病人自身或者周围物体的损伤。刻板性运动存在周期性和固定的运动模式，这使它可能能够被运动传感器探测到。</p>
+<p>这篇论文项目进一步扩展和验证了已经发表的刻板性运动探测算法。论文利用两个相隔2年的研究数据集，设计了多个实验来验证算法的普适性。这时首次在这个领域进行数据集之间的交叉比较。</p>
+<p>我主要负责关于决策树相关的算法实现和实验设计。</p>
+<p>一篇相关论文于2014年发表于Ubicomp顶级会议。</p>
+</blockquote>
+</li>
+<li><p><strong>2013年9月至2013年12月</strong> Tower Airdrop: 一个基于安卓手机传感器的运动游戏</p>
+<blockquote>
+<p>Tower Airdrop是一个2D运动类游戏，游戏目的是为了促进儿童的身体运动。它的灵感来源于经典的堆箱子游戏。</p>
+<p>它采用Box2D物理引擎来模拟空中掉落的箱子。并且将健身中的“间断训练”运用在游戏里，利用手机的大幅度摇晃模拟高强度运动来打开掉落箱子的降落伞，再利用手机陀螺仪精确控制箱子的偏转，模拟低强度运动或者休息间隔。</p>
+<p>我提出了最初的游戏设计，并且负责开发了相关的物理引擎，陀螺仪以及加速度计的检测系统。</p>
+<p>这个游戏可以在Google Play Store上免费下载，并且源代码已经开源。</p>
+</blockquote>
+</li>
+<li><p><strong>2012年9月至2013年12月</strong> 利用腕带加速度计探测吸烟行为</p>
+<blockquote>
+<p>戒烟对长寿及疾病控制都有重要影响。利用可穿戴传感器监测吸烟行为提供了一种低成本的辅助戒烟手段。</p>
+<p>这个项目旨在分析利用腕带加速度计准确识别吸烟动作和行为的可行性，分析使用的数据集来自7个个体，总计时长14小时。</p>
+<p>我设计了一种双层机器学习模型，先通过随机森林探测吸烟动作，接着使用时序移动平均模型来推测吸烟行为。结果显示这种新算法有优于之前算法的F1分数表现（0.79）。</p>
+<p>一篇相关的论文于2014年发表于PervasiveHealth顶级会议。</p>
+</blockquote>
+</li>
+<li><p><strong>2011年12月至2012年8月</strong> 棱镜眼镜训练程序的开发和维护</p>
+<blockquote>
+<p>棱镜眼镜通过折射，将视野受损病人的视野外物体导入可视区域，从而扩大视野受损病人的可视区域。但病人通常需要通过一定的训练来适应棱镜眼镜。所以开发简单易用的棱镜眼镜训练程序对于推广这种低价技术意义重大。 </p>
+<p>我主要负责将一个用Visual Basic和C#写成的棱镜眼镜训练程序原型扩展成更复杂但好用的程序，这些内容包括三个方面: 第一，我将这个应用程序转换为了类似射击的游戏, 第二，我使这个程序能够支持多种多媒体格式，包括声音，视频和图片，以及第三，我成功发现并修复了一个多屏幕坐标系变换的bug，这个bug可能会严重影响测量数据的准确性。</p>
+<p>一篇与之有关的顶级期刊论文已于2016年发表。</p>
+</blockquote>
+</li>
+<li><p><strong>2011年12月至2012年8月</strong> 3D虚拟街景碰撞测试系统的开发和维护</p>
+<blockquote>
+<p>视觉损伤的病人因为存在许多视觉盲区，所以可能会不小心与周围的物体或者行人相撞。分析这些病人的视觉盲区，视线方向与碰撞的关系有助于开发辅助工具（比如棱镜眼镜）来帮助病人避免碰撞。</p>
+<p>这个项目利用计算机模拟了一个第一人称视角的3D购物中心的行走场景，同时伴随着随机出现的物体或者行人。测试者使用三元手柄来回答是否会与这些物体或者行人相撞，同时一个眼球追踪系统会实时测量他们的视线方向。</p>
+<p>我主要负责开发三元手柄的硬件驱动（C），并且将一个商用眼球追踪系统集成到这个虚拟测试系统中，使它能够在监视屏幕上实时显示测试者在屏幕上的视线方位。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="开源软件"><a href="#开源软件" class="headerlink" title="开源软件"></a>开源软件</h2><ul>
+<li>用于处理和可视化加速度数据的R语言开源库</li>
+<li>关于MIMS算法的R语言开源库</li>
+<li>利用网络图可视化混淆矩阵的R语言开源库</li>
+<li>Tower Airdrop基于安卓和传感器的运动游戏</li>
+<li>一个可用于同步显示传感器，标注以及特征向量的可视化web应用</li>
+</ul>
+<h2 id="推荐人"><a href="#推荐人" class="headerlink" title="推荐人"></a>推荐人</h2><ul>
+<li><p><strong>2013年1月至今</strong> Stephen Intille博士（硕士及博士导师，副教授，个人健康信息学博士项目负责人） @ <em>计算机与信息科学学院，东北大学，波士顿，美国</em></p>
+</li>
+<li><p><strong>2011年12月至2012年8月</strong> Eli Peli博士（实习导师, 教授，高级科学家） @ <em>Schepens Eye Research Institute, 20 Staniford St, Boston, MA, 02114</em></p>
+</li>
+</ul>
+
+    </div>
+    <hr />
+    <div class="social-share"></div>
+</section>
+  </div>
+
+  <footer class='footer'>
+    <div class='footer-logo'>
+        <span>QT</span>
+    </div>
+    <div class='footer-social'>
+        
+        
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/qutang' target='_blank' title='Find me on github' ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+                
+                    <div class='footer-social-item'><a href='https://www.linkedin.com/in/qutang' target='_blank' title='Find me on linkedin' ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+        
+    </div>
+    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> in 2017</p>
+    <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
+    <p>Theme <a href="http://qutang.github.io/2017/06/27/Hexo-theme-cutie/">Cutie</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
+</footer>
+
+  <br>
+
+  <div id="footer-menu-container">
+		<nav class="menu">
+	
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/archives/">
+			<img src="/images/archive.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/archives/">
+				<span>Archives</span>
+			</a>
+		</div>
+	</div>
+	
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/resume/">
+					<img src="/images/resume.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/resume/">
+							<span>Resume/简历</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/projects/">
+					<img src="/images/projects.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/projects/">
+							<span>Projects</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/notes/">
+					<img src="/images/notes.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/notes/">
+							<span>Notes</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+		
+		
+			<div class='menu-item grow'>
+			
+				<div class='menu-icon'>
+				<a href="/categories/fun/">
+					<img src="/images/fun.svg" alt="">
+					</a>
+					</div>
+					
+					<div class="menu-name">
+						<a class='menu-link' href="/categories/fun/">
+							<span>Fun</span>
+						</a>
+					</div>
+				</a>
+			</div>
+		
+	
+	<div class='menu-item grow'>
+		<div class='menu-icon'>
+			<a href="/search/">
+			<img src="/images/search.svg" alt="">
+			</a>
+		</div>
+		<div class="menu-name">
+			<a class='menu-link' href="/search/">
+				<span>Search</span>
+			</a>
+		</div>
+	</div>
+</nav>
+
+	</div>
+
+  <script>
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+
+<script src="/js/lightgallery.min.js"></script>
+<script type='text/javascript'>
+    lightGallery(document.getElementById('lightgallery'));
+</script>
+
+<script data-no-instant type='text/javascript'>
+changeLayoutOnTouchScreen();
+setVersionForCurrentPage();
+setVersionBadgeForIndexPages();
+</script>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<script>!function(t){function n(){for(var n=0;n<e.length;n++)(function(n){var e=n.getBoundingClientRect();return e.top>=0&&e.left>=0&&e.top<=(t.innerHeight||document.documentElement.clientHeight)})(e[n])&&function(t,n){var e=new Image,i=t.getAttribute("data-original");e.onload=function(){t.src=i,n&&n()},e.src=i}(e[n],function(){e.splice(n,n)})}var e=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));n(),t.addEventListener("scroll",n)}(this);</script></body>
+</html>
