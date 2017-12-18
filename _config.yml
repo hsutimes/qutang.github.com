@@ -4,10 +4,12 @@
 
 # Site
 title: QT is not Cutie
-description: A personal website for Qu Tang. really long description. A personal website for Qu Tang. really long description.
+subtitle: A personal website for Qu Tang
 author: Qu Tang
 author_link: http://qutang.github.io
 language:
+  - en
+  - zh-Hans
 timezone:
 
 # URL
