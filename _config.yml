@@ -37,23 +37,20 @@ post_asset_folder: true
 relative_link: false
 future: true
 
-# Highlight
-prism_plugin:
-  mode: 'preprocess'    # realtime/preprocess
-  theme: 'duotone-light'
-  line_number: true    # default false
-
 highlight:
-  enable: false
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace: 4
 
-kramed:
-  gfm: true
-  pedantic: false
-  sanitize: false
-  tables: true
-  breaks: true
-  smartLists: true
-  smartypants: true
+# kramed:
+#   gfm: true
+#   pedantic: false
+#   sanitize: false
+#   tables: true
+#   breaks: true
+#   smartLists: true
+#   smartypants: true
 
 # Category & Tag
 default_category: uncategorized
@@ -90,7 +87,6 @@ lazyload:
 cutie:
   logo: /images/test-logo.jpg
   slogan: Coding, writing, research and FUN.
-  signature: QT
 # Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
 # If menu is absent, only "archive" and "search" menu items will be preserved
 # Configurable menu items should not exeed 4, otherwise the last ones will be ignored

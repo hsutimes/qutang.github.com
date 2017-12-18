@@ -143,7 +143,7 @@ This feature is implemented with browser cookie.
 
 ### A sample snippet about the theme in `_config.yml` of the website
 
-```yaml
+```yml _config.yml
 # Be careful about the indent
 theme: cutie
 
