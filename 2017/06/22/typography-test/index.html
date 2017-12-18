@@ -14,8 +14,8 @@
       <title>Typography Test - QT is not Cutie</title>
   
   
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="A personal website for Qu Tang. really long description. A personal website for Qu Tang. really long description.">
+  <meta name="author" content="Qu Tang">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="/css/share.min.css">
 <link rel="stylesheet" href="/css/lightgallery.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -44,8 +45,10 @@
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/instantclick.min.js"></script>
     <script src="/js/social-share.min.js"></script>
     <script src="/js/theme.js"></script>
+    <script src="/js/lightgallery.min.js"></script>
 
   <!-- include cookie.js -->
   
@@ -64,10 +67,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
 
-<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+</head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
-  <header class="header">
+
+	
+
+
+<header class="header">
 	<div class="header-title">
 		
 			<div class='header-logo'><a href='/'>
@@ -75,15 +81,16 @@
 			</a></div>
 			<div class='header-text' >
 			    <h1>QT is not Cutie</h1>
-				<p><small>A personal website for Qu Tang....</small></p>
+				<p><small></small></p>
 			</div>
 		
 	</div>
 	<div id="header-menu-container">
-		<nav class="menu">
-	
 		
 	
+
+
+<nav class="menu">
 	<div class='menu-item grow'>
 		<div class='menu-icon'>
 			<a href="/archives/">
@@ -250,17 +257,15 @@
 <blockquote>
 <p>Blockquote</p>
 </blockquote>
-<pre><code>Block code
-</code></pre><pre class="line-numbers language-js"><code class="language-js"><span class="token function">Highlighted</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Block code</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Highlighted(code)</div></pre></td></tr></table></figure>
 <ul>
 <li><p>unordered list 1<br>Belong to list 1</p>
 <blockquote>
 <p>Block in list 1</p>
 </blockquote>
-<pre><code>Block code in list 1
-</code></pre><pre class="line-numbers language-js"><code class="language-js"><span class="token function">Highlighted</span><span class="token punctuation">(</span>code<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token keyword">in</span> list <span class="token number">1</span><span class="token punctuation">}</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Block code in list 1</div></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Highlighted(code)&#123;<span class="keyword">in</span> list <span class="number">1</span>&#125;</div></pre></td></tr></table></figure>
 <ul>
 <li>nested list 2<br>Belong to list 2<ul>
 <li>nested list 3<br>Belong to list 3</li>
@@ -283,18 +288,18 @@
 </li>
 </ol>
 <blockquote>
-<p>code inside block</p>
-<pre><code>  code inside a block
-</code></pre></blockquote>
+<p>code inside block<br>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">code inside a block</div></pre></td></tr></table></figure></p>
+</blockquote>
 <p><a href="#">A link</a></p>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/images/projects.svg" alt="A picture"></p>
-<pre><code>alert(&#39;Hello World!&#39;);</code></pre>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure>
     </div>
     <hr />
 
-    <h2>Share and comment</h2>
+    <h2>Share</h2>
     <div class="social-share"></div>
     
+        <h2>Comment</h2>
         <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
@@ -304,25 +309,14 @@
 </article>
   </div>
 
-  <footer class='footer'>
-    <div class='footer-logo'>
-        <span>QT</span>
-    </div>
+  
+    
+
+<footer class='footer'>
     <div class='footer-social'>
         
-        
-            
-                
-                    <div class='footer-social-item'><a href='https://github.com/qutang' target='_blank' title='Find me on github' ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-                
-                    <div class='footer-social-item'><a href='https://www.linkedin.com/in/qutang' target='_blank' title='Find me on linkedin' ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-        
     </div>
-    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> in 2017</p>
+    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> 2017</p>
     <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
     <p>Theme <a href="http://qutang.github.io/2017/06/27/Hexo-theme-cutie/">Cutie</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
 </footer>
@@ -330,10 +324,11 @@
   <br>
 
   <div id="footer-menu-container">
-		<nav class="menu">
-	
 		
 	
+
+
+<nav class="menu">
 	<div class='menu-item grow'>
 		<div class='menu-icon'>
 			<a href="/archives/">
@@ -456,17 +451,35 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-</script>
-
-<script src="/js/lightgallery.min.js"></script>
-<script type='text/javascript'>
+    </script>
+<script data-no-instant>
+InstantClick.on('change', function(isInitialLoad) {
+  if (isInitialLoad === false) {
+    if (typeof MathJax !== 'undefined') // support MathJax
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    if (typeof prettyPrint !== 'undefined') // support google code prettify
+      prettyPrint();
+    if (typeof _hmt !== 'undefined')  // support 百度统计
+      _hmt.push(['_trackPageview', location.pathname + location.search]);
+    if (typeof ga !== 'undefined')  // support google analytics
+        ga('send', 'pageview', location.pathname + location.search);
+    changeLayoutOnTouchScreen();
     lightGallery(document.getElementById('lightgallery'));
-</script>
-
-<script data-no-instant type='text/javascript'>
-changeLayoutOnTouchScreen();
+    setVersionForCurrentPage();
+    setVersionBadgeForIndexPages();
+    //
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    }
+});
+InstantClick.init();
 setVersionForCurrentPage();
 setVersionBadgeForIndexPages();
+</script>
+<script type='text/javascript'>
+  lightGallery(document.getElementById('lightgallery'));
 </script>
 
 <!-- End Document

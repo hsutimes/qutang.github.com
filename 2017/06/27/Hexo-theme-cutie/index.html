@@ -14,8 +14,8 @@
       <title>Hexo Theme: Cutie - QT is not Cutie</title>
   
   
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="A personal website for Qu Tang. really long description. A personal website for Qu Tang. really long description.">
+  <meta name="author" content="Qu Tang">
 
   <!-- Mobile Specific Metas
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -35,6 +35,7 @@
 <link rel="stylesheet" href="/css/theme.css">
 <link rel="stylesheet" href="/css/share.min.css">
 <link rel="stylesheet" href="/css/lightgallery.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
@@ -44,8 +45,10 @@
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+    <script src="/js/instantclick.min.js"></script>
     <script src="/js/social-share.min.js"></script>
     <script src="/js/theme.js"></script>
+    <script src="/js/lightgallery.min.js"></script>
 
   <!-- include cookie.js -->
   
@@ -64,10 +67,13 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
 
-<link rel="stylesheet" href="/css/prism-duotone-light.css" type="text/css">
-<link rel="stylesheet" href="/css/prism-line-numbers.css" type="text/css"></head>
+</head>
 <body style="display: flex; flex-direction: column; min-height: 100vh;">
-  <header class="header">
+
+	
+
+
+<header class="header">
 	<div class="header-title">
 		
 			<div class='header-logo'><a href='/'>
@@ -75,15 +81,16 @@
 			</a></div>
 			<div class='header-text' >
 			    <h1>QT is not Cutie</h1>
-				<p><small>A personal website for Qu Tang....</small></p>
+				<p><small></small></p>
 			</div>
 		
 	</div>
 	<div id="header-menu-container">
-		<nav class="menu">
-	
 		
 	
+
+
+<nav class="menu">
 	<div class='menu-item grow'>
 		<div class='menu-icon'>
 			<a href="/archives/">
@@ -311,22 +318,15 @@
 <h3 id="Normal-installation"><a href="#Normal-installation" class="headerlink" title="Normal installation"></a>Normal installation</h3><ul>
 <li>clone repository into <code>themes</code> folder of your hexo website and rename the folder to <code>cutie</code></li>
 </ul>
-<pre class="line-numbers language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/qutang/hexo-theme-cutie.git
-<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git <span class="built_in">clone</span> https://github.com/qutang/hexo-theme-cutie.git</div></pre></td></tr></table></figure>
 <h3 id="Recommended-Hexo-plugins"><a href="#Recommended-Hexo-plugins" class="headerlink" title="Recommended Hexo plugins"></a>Recommended Hexo plugins</h3><p>Cutie works better with these hexo plugins:</p>
 <ul>
 <li><a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prism-plugin</a></li>
 <li><a href="https://www.npmjs.com/package/hexo-lazyload-image" target="_blank" rel="noopener">hexo-lazyload-image</a></li>
 </ul>
-<h3 id="Compatibility-issues"><a href="#Compatibility-issues" class="headerlink" title="Compatibility issues"></a>Compatibility issues</h3><ul>
-<li><code>hexo-tag-dplayer</code> plugin has some issues when using together with hexo-prism-plugin.</li>
-<li>Try to use english characters for all filenames. There are some issues with unicode url and filenames.</li>
-</ul>
 <h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><h3 id="2017-12-17"><a href="#2017-12-17" class="headerlink" title="2017-12-17"></a>2017-12-17</h3><ul>
 <li><p>Add configuration setting for instantclick. To avoid compatibility issue with many third party js codes, by default it is turned off. To enable it, add this in <code>_config.yml</code>.</p>
-<pre class="line-numbers language-yml"><code class="language-yml">cutie:
-  instantclick: true
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">cutie:</span></div><div class="line"><span class="attr">  instantclick:</span> <span class="literal">true</span></div></pre></td></tr></table></figure>
 </li>
 </ul>
 <h3 id="2017-12-08"><a href="#2017-12-08" class="headerlink" title="2017-12-08"></a>2017-12-08</h3><ul>
@@ -336,9 +336,7 @@
 <li>Remove bottom border for header (I know it’s ugly!). Redesign header.</li>
 <li>Add support for logo image (can be omitted). See <code>_config.yml</code> file field.</li>
 </ul>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token key atrule">cutie</span><span class="token punctuation">:</span>
-  <span class="token key atrule">logo</span><span class="token punctuation">:</span> /your/path/to/logo/image
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">cutie:</span></div><div class="line"><span class="attr">  logo:</span> <span class="string">/your/path/to/logo/image</span></div></pre></td></tr></table></figure>
 <ul>
 <li>Add more padding to footer nav menu.</li>
 <li>Add zooming effect to logo image, post icon (index page), pagination button and nav menu (close issue <a href="https://github.com/qutang/hexo-theme-cutie/issues/1" target="_blank" rel="noopener">#1</a>)</li>
@@ -373,60 +371,7 @@
 <li>If <code>version</code> is smaller than previous push’s <code>version</code> number, the unread dot will not show up.</li>
 </ul>
 <p>This feature is implemented with browser cookie.</p>
-<h3 id="A-sample-snippet-about-the-theme-in-config-yml-of-the-website"><a href="#A-sample-snippet-about-the-theme-in-config-yml-of-the-website" class="headerlink" title="A sample snippet about the theme in _config.yml of the website"></a>A sample snippet about the theme in <code>_config.yml</code> of the website</h3><pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token comment" spellcheck="true"># Be careful about the indent</span>
-<span class="token key atrule">theme</span><span class="token punctuation">:</span> cutie
-
-<span class="token key atrule">google-analytics</span><span class="token punctuation">:</span> UA<span class="token punctuation">-</span>xxxxxxxx<span class="token punctuation">-</span><span class="token number">1</span>
-
-<span class="token key atrule">author_link</span><span class="token punctuation">:</span> http<span class="token punctuation">:</span>//link/to/your/personal/website
-
-<span class="token key atrule">cutie</span><span class="token punctuation">:</span>
-  <span class="token key atrule">logo</span><span class="token punctuation">:</span> /your/path/to/logo/image
-  <span class="token key atrule">slogan</span><span class="token punctuation">:</span> This is a slogan.
-  <span class="token key atrule">signature</span><span class="token punctuation">:</span> SIGNATURE
-
-<span class="token comment" spellcheck="true"># Configure navigation menu, provide a relative link and a path to icon (icon should better be square)</span>
-<span class="token comment" spellcheck="true"># If menu is absent, only "archive" and "search" menu items will be preserved</span>
-<span class="token comment" spellcheck="true"># Configurable menu items should not exeed 4, otherwise the last ones will be ignored</span>
-
-  <span class="token key atrule">menu</span><span class="token punctuation">:</span>
-    <span class="token key atrule">Resume</span><span class="token punctuation">:</span> 
-      <span class="token key atrule">link</span><span class="token punctuation">:</span> /resume/
-      <span class="token key atrule">icon</span><span class="token punctuation">:</span> /images/resume.svg
-    <span class="token key atrule">Projects</span><span class="token punctuation">:</span> 
-      <span class="token key atrule">link</span><span class="token punctuation">:</span> /categories/projects/
-      <span class="token key atrule">icon</span><span class="token punctuation">:</span> /images/projects.svg
-    <span class="token key atrule">Notes</span><span class="token punctuation">:</span> 
-      <span class="token key atrule">link</span><span class="token punctuation">:</span> /categories/notes/
-      <span class="token key atrule">icon</span><span class="token punctuation">:</span> /images/notes.svg
-    <span class="token key atrule">Fun</span><span class="token punctuation">:</span> 
-      <span class="token key atrule">link</span><span class="token punctuation">:</span> /categories/fun/
-      <span class="token key atrule">icon</span><span class="token punctuation">:</span> /images/fun.svg
-
-<span class="token comment" spellcheck="true"># As long as the name matches the font awesome icon name, you can add even more social links</span>
-<span class="token comment" spellcheck="true"># Tip: the social link can be a QRCODE link</span>
-  <span class="token key atrule">social</span><span class="token punctuation">:</span>
-    <span class="token key atrule">medium</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">skype</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">slack</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">steam</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">tumblr</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">whatsapp</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">youtube</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">snapchat</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">instagram</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">qq</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">google-plus</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">twitter</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">facebook</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">weibo</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">weixin</span><span class="token punctuation">:</span> 
-    <span class="token key atrule">github</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//your/github/profile/link
-    <span class="token key atrule">linkedin</span><span class="token punctuation">:</span> https<span class="token punctuation">:</span>//your/linkedin/profile/link
-
-<span class="token comment" spellcheck="true"># Enable/disable instant click, if absent, it means disabled.</span>
-  <span class="token key atrule">instantclick</span><span class="token punctuation">:</span> <span class="token boolean important">false </span><span class="token comment" spellcheck="true"># or you can set it to be "true" to enable</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<h3 id="A-sample-snippet-about-the-theme-in-config-yml-of-the-website"><a href="#A-sample-snippet-about-the-theme-in-config-yml-of-the-website" class="headerlink" title="A sample snippet about the theme in _config.yml of the website"></a>A sample snippet about the theme in <code>_config.yml</code> of the website</h3><figure class="highlight yml"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Be careful about the indent</span></div><div class="line"><span class="attr">theme:</span> <span class="string">cutie</span></div><div class="line"></div><div class="line"><span class="attr">google-analytics:</span> <span class="string">UA-xxxxxxxx-1</span></div><div class="line"></div><div class="line"><span class="attr">author_link:</span> <span class="attr">http://link/to/your/personal/website</span></div><div class="line"></div><div class="line"><span class="attr">cutie:</span></div><div class="line"><span class="attr">  logo:</span> <span class="string">/your/path/to/logo/image</span></div><div class="line"><span class="attr">  slogan:</span> <span class="string">This</span> <span class="string">is</span> <span class="string">a</span> <span class="string">slogan.</span></div><div class="line"><span class="attr">  signature:</span> <span class="string">SIGNATURE</span></div><div class="line"></div><div class="line"><span class="comment"># Configure navigation menu, provide a relative link and a path to icon (icon should better be square)</span></div><div class="line"><span class="comment"># If menu is absent, only "archive" and "search" menu items will be preserved</span></div><div class="line"><span class="comment"># Configurable menu items should not exeed 4, otherwise the last ones will be ignored</span></div><div class="line"></div><div class="line"><span class="attr">  menu:</span></div><div class="line"><span class="attr">    Resume:</span> </div><div class="line"><span class="attr">      link:</span> <span class="string">/resume/</span></div><div class="line"><span class="attr">      icon:</span> <span class="string">/images/resume.svg</span></div><div class="line"><span class="attr">    Projects:</span> </div><div class="line"><span class="attr">      link:</span> <span class="string">/categories/projects/</span></div><div class="line"><span class="attr">      icon:</span> <span class="string">/images/projects.svg</span></div><div class="line"><span class="attr">    Notes:</span> </div><div class="line"><span class="attr">      link:</span> <span class="string">/categories/notes/</span></div><div class="line"><span class="attr">      icon:</span> <span class="string">/images/notes.svg</span></div><div class="line"><span class="attr">    Fun:</span> </div><div class="line"><span class="attr">      link:</span> <span class="string">/categories/fun/</span></div><div class="line"><span class="attr">      icon:</span> <span class="string">/images/fun.svg</span></div><div class="line"></div><div class="line"><span class="comment"># As long as the name matches the font awesome icon name, you can add even more social links</span></div><div class="line"><span class="comment"># Tip: the social link can be a QRCODE link</span></div><div class="line"><span class="attr">  social:</span></div><div class="line"><span class="attr">    medium:</span> </div><div class="line"><span class="attr">    skype:</span> </div><div class="line"><span class="attr">    slack:</span> </div><div class="line"><span class="attr">    steam:</span> </div><div class="line"><span class="attr">    tumblr:</span> </div><div class="line"><span class="attr">    whatsapp:</span> </div><div class="line"><span class="attr">    youtube:</span> </div><div class="line"><span class="attr">    snapchat:</span> </div><div class="line"><span class="attr">    instagram:</span> </div><div class="line"><span class="attr">    qq:</span> </div><div class="line"><span class="attr">    google-plus:</span> </div><div class="line"><span class="attr">    twitter:</span> </div><div class="line"><span class="attr">    facebook:</span> </div><div class="line"><span class="attr">    weibo:</span> </div><div class="line"><span class="attr">    weixin:</span> </div><div class="line"><span class="attr">    github:</span> <span class="attr">https://your/github/profile/link</span></div><div class="line"><span class="attr">    linkedin:</span> <span class="attr">https://your/linkedin/profile/link</span></div><div class="line"></div><div class="line"><span class="comment"># Enable/disable instant click, if absent, it means disabled.</span></div><div class="line"><span class="attr">  instantclick:</span> <span class="literal">false</span> <span class="comment"># or you can set it to be "true" to enable</span></div></pre></td></tr></table></figure>
 <h3 id="A-set-of-default-icons-referring-using-path-images-icon-name-svg"><a href="#A-set-of-default-icons-referring-using-path-images-icon-name-svg" class="headerlink" title="A set of default icons, referring using path(/images/icon_name.svg)"></a>A set of default icons, referring using path(<code>/images/icon_name.svg</code>)</h3><ul>
 <li><a href="https://qutang.github.io/images/archive.svg">archive</a></li>
 <li><a href="https://qutang.github.io/images/fun.svg">fun</a></li>
@@ -440,20 +385,12 @@
 <h3 id="Add-search-page"><a href="#Add-search-page" class="headerlink" title="Add search page"></a>Add search page</h3><ol>
 <li>Create a new page called <code>search</code></li>
 <li><p>Use layout <code>search</code> in the front matter of <code>search</code> page</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token key atrule">layout</span><span class="token punctuation">:</span> search
-<span class="token punctuation">---</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">---</span></div><div class="line"><span class="attr">layout:</span> <span class="string">search</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure>
 </li>
 </ol>
 <h3 id="It-is-recommended-to-use-the-hexo-prism-js-plugin-for-code-highlight"><a href="#It-is-recommended-to-use-the-hexo-prism-js-plugin-for-code-highlight" class="headerlink" title="It is recommended to use the hexo prism js plugin for code highlight."></a>It is recommended to use the hexo prism js plugin for code highlight.</h3><h3 id="Custom-post-icon"><a href="#Custom-post-icon" class="headerlink" title="Custom post icon"></a>Custom post icon</h3><p>Use <code>icon: path/to/your/icon</code> in post front matter to use custom icon when displaying in home page instead of default category icon.</p>
 <h3 id="Post-gallery-photos"><a href="#Post-gallery-photos" class="headerlink" title="Post gallery photos"></a>Post gallery photos</h3><p>You may add photos to a gallery display at the top of the post by adding the filenames of the images to the YAML front matter of a post.</p>
-<pre class="line-numbers language-yaml"><code class="language-yaml"><span class="token punctuation">---</span>
-<span class="token key atrule">photos</span><span class="token punctuation">:</span>
-  <span class="token punctuation">-</span> image1.png
-  <span class="token punctuation">-</span> image2.png
-<span class="token punctuation">---</span>
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="meta">---</span></div><div class="line"><span class="attr">photos:</span></div><div class="line"><span class="bullet">  -</span> <span class="string">image1.png</span></div><div class="line"><span class="bullet">  -</span> <span class="string">image2.png</span></div><div class="line"><span class="meta">---</span></div></pre></td></tr></table></figure>
 <p>Make sure to put these images in the <code>source/images/[post-file-name]/</code> folder.</p>
 <h2 id="Contribution"><a href="#Contribution" class="headerlink" title="Contribution"></a>Contribution</h2><p>Post feature request or bugs <a href="https://github.com/qutang/hexo-theme-cutie/issues" target="_blank" rel="noopener">here</a>, or send me pull request.</p>
 <h2 id="Acknowledge"><a href="#Acknowledge" class="headerlink" title="Acknowledge"></a>Acknowledge</h2><ol>
@@ -468,9 +405,10 @@
     </div>
     <hr />
 
-    <h2>Share and comment</h2>
+    <h2>Share</h2>
     <div class="social-share"></div>
     
+        <h2>Comment</h2>
         <div id="disqus_thread"></div>
         <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
@@ -480,25 +418,14 @@
 </article>
   </div>
 
-  <footer class='footer'>
-    <div class='footer-logo'>
-        <span>QT</span>
-    </div>
+  
+    
+
+<footer class='footer'>
     <div class='footer-social'>
         
-        
-            
-                
-                    <div class='footer-social-item'><a href='https://github.com/qutang' target='_blank' title='Find me on github' ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-                
-                    <div class='footer-social-item'><a href='https://www.linkedin.com/in/qutang' target='_blank' title='Find me on linkedin' ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
-                
-            
-        
     </div>
-    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> in 2017</p>
+    <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> 2017</p>
     <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
     <p>Theme <a href="http://qutang.github.io/2017/06/27/Hexo-theme-cutie/">Cutie</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
 </footer>
@@ -506,10 +433,11 @@
   <br>
 
   <div id="footer-menu-container">
-		<nav class="menu">
-	
 		
 	
+
+
+<nav class="menu">
 	<div class='menu-item grow'>
 		<div class='menu-icon'>
 			<a href="/archives/">
@@ -632,17 +560,35 @@ this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your pag
     s.setAttribute('data-timestamp', +new Date());
     (d.head || d.body).appendChild(s);
     })();
-</script>
-
-<script src="/js/lightgallery.min.js"></script>
-<script type='text/javascript'>
+    </script>
+<script data-no-instant>
+InstantClick.on('change', function(isInitialLoad) {
+  if (isInitialLoad === false) {
+    if (typeof MathJax !== 'undefined') // support MathJax
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    if (typeof prettyPrint !== 'undefined') // support google code prettify
+      prettyPrint();
+    if (typeof _hmt !== 'undefined')  // support 百度统计
+      _hmt.push(['_trackPageview', location.pathname + location.search]);
+    if (typeof ga !== 'undefined')  // support google analytics
+        ga('send', 'pageview', location.pathname + location.search);
+    changeLayoutOnTouchScreen();
     lightGallery(document.getElementById('lightgallery'));
-</script>
-
-<script data-no-instant type='text/javascript'>
-changeLayoutOnTouchScreen();
+    setVersionForCurrentPage();
+    setVersionBadgeForIndexPages();
+    //
+    var d = document, s = d.createElement('script');
+    s.src = 'https://qutang-github-io.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    }
+});
+InstantClick.init();
 setVersionForCurrentPage();
 setVersionBadgeForIndexPages();
+</script>
+<script type='text/javascript'>
+  lightGallery(document.getElementById('lightgallery'));
 </script>
 
 <!-- End Document
