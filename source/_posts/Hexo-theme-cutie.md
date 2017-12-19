@@ -12,7 +12,7 @@ photos:
   - cutie.png
 icon:
   - /images/hexo.svg
-version: 6
+version: 7
 ---
 _cutie_ is a responsive hexo theme heavily inspired by the clean and user friendly design of [www.linpx.com](http://www.linpx.com).
 
@@ -69,6 +69,10 @@ Cutie works better with these hexo plugins:
 * [hexo-lazyload-image](https://www.npmjs.com/package/hexo-lazyload-image)
 
 ## Changelog
+
+### 2017-12-18
+
+* Support multiple categories and fix bugs when displaying category icons. [#28](https://github.com/qutang/hexo-theme-cutie/issues/28)
 
 ### 2017-12-17
 
