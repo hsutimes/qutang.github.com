@@ -1,5 +1,5 @@
 ---
-title: 'Hexo theme: cutie'
+title: 'Hexo theme: cutie 1.0.0'
 date: 2017-06-27 10:31:00
 tags:
 	- hexo
@@ -69,6 +69,10 @@ Cutie works better with these hexo plugins:
 * [hexo-lazyload-image](https://www.npmjs.com/package/hexo-lazyload-image)
 
 ## Changelog
+
+### 2017-12-20
+
+* Add theme version to footer
 
 ### 2017-12-18
 
