@@ -1,0 +1,40 @@
+logo: /images/test-logo.jpg
+slogan: Coding, writing, research and FUN.
+# Configure navigation menu, provide a relative link and a path to icon (icon should better be square)
+# If menu is absent, only "archive" and "search" menu items will be preserved
+# Configurable menu items should not exeed 4, otherwise the last ones will be ignored
+menu:
+  Resume/简历: 
+    link: /resume/
+    icon: /images/resume.svg
+  Projects: 
+    link: /categories/projects/
+    icon: /images/projects.svg
+  Notes: 
+    link: /categories/notes/
+    icon: /images/notes.svg
+  Fun: 
+    link: /categories/fun/
+    icon: /images/fun.svg
+# As long as the name matches the font awesome icon name, you can add even more social links
+# As the tip: the social link can be a QRCODE link
+social:
+  github: https://github.com/qutang
+  linkedin: https://www.linkedin.com/in/qutang
+
+global:
+  comment_system: valine # disqus, valine, gitment
+
+valine:
+  appId: uvf1sW7tg7XM61LtgGY5EKUM-gzGzoHsz
+  appKey: CaSUjr9v26gpuVqN99Rwc4Qv
+  placeholder: Feel free to leave some 💩 or 🎉
+
+disqus:
+  shortname: qutang-github-io
+
+gitment:
+  owner: qutang
+  repo: qutang.github.io
+  client_id: 05148220daec084f8185
+  client_secret: f45debb31e3df75c73428990a06657acfa7018b3
