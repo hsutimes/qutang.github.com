@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
+    
+
+
+
 <head>
 
   <!-- Basic Page Needs
@@ -45,10 +50,8 @@
   <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="/js/instantclick.min.js"></script>
     <script src="/js/social-share.min.js"></script>
     <script src="/js/theme.js"></script>
-    <script src="/js/lightgallery.min.js"></script>
 
   <!-- include cookie.js -->
   
@@ -63,6 +66,11 @@
 </script>
 
 
+  <!-- include comment system code -->
+  
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src='//unpkg.com/valine/dist/Valine.min.js'></script>
+  
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="/images/favicon.png">
@@ -207,7 +215,7 @@
     }
 </style>
 
-<article class="article" id="/2017/06/27/Hexo-theme-cutie/" data-name='Hexo Theme: Cutie' data-version="6">
+<article class="article" id="/2017/06/27/Hexo-theme-cutie/" data-name='Hexo Theme: Cutie' data-version="7">
 
     <!-- Title -->
 
@@ -221,16 +229,28 @@
     
 
     <div class='article-header'>
+         
          <div class='article-logo'>
-            <a href="/categories/projects/" data-no-instant>
-                <img src="/images/projects.svg" alt="">
+            <a href="#" data-no-instant>
+                <img src="/images/hexo.svg" alt="">
             </a>
          </div>
+         
          <h1 class='article-title'>
             <a href="/2017/06/27/Hexo-theme-cutie/">
                 Hexo Theme: Cutie
             </a>
         </h1>
+        
+        <ul class='article-categories'>
+            
+            
+                <li><a href="/categories/projects/" data-no-instant>
+                    <img src="/images/projects.svg" alt="projects" />
+                </a></li>
+            
+        </ul>
+        
     </div>
    
     <!-- Date and Author -->
@@ -238,7 +258,7 @@
        	2017-06-27
         by Qu Tang
         
-            | Version: 6
+            | Version: 7
         
     </p>
     <p>
@@ -274,7 +294,6 @@
              
         </div>
         <hr>
-    
     
 
     <!-- Content -->
@@ -324,7 +343,15 @@
 <li><a href="https://github.com/ele828/hexo-prism-plugin" target="_blank" rel="noopener">hexo-prism-plugin</a></li>
 <li><a href="https://www.npmjs.com/package/hexo-lazyload-image" target="_blank" rel="noopener">hexo-lazyload-image</a></li>
 </ul>
-<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><h3 id="2017-12-08"><a href="#2017-12-08" class="headerlink" title="2017-12-08"></a>2017-12-08</h3><ul>
+<h2 id="Changelog"><a href="#Changelog" class="headerlink" title="Changelog"></a>Changelog</h2><h3 id="2017-12-18"><a href="#2017-12-18" class="headerlink" title="2017-12-18"></a>2017-12-18</h3><ul>
+<li>Support multiple categories and fix bugs when displaying category icons. <a href="https://github.com/qutang/hexo-theme-cutie/issues/28" target="_blank" rel="noopener">#28</a></li>
+</ul>
+<h3 id="2017-12-17"><a href="#2017-12-17" class="headerlink" title="2017-12-17"></a>2017-12-17</h3><ul>
+<li><p>Add configuration setting for instantclick. To avoid compatibility issue with many third party js codes, by default it is turned off. To enable it, add this in <code>_config.yml</code>.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="attr">cutie:</span></div><div class="line"><span class="attr">  instantclick:</span> <span class="literal">true</span></div></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="2017-12-08"><a href="#2017-12-08" class="headerlink" title="2017-12-08"></a>2017-12-08</h3><ul>
 <li>Adjust heading, inline code, list typography</li>
 </ul>
 <h3 id="2017-12-05"><a href="#2017-12-05" class="headerlink" title="2017-12-05"></a>2017-12-05</h3><ul>
@@ -404,11 +431,13 @@
     <div class="social-share"></div>
     
         <h2>Comment</h2>
-        <div id="disqus_thread"></div>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        
     
 
-    
+
+  
+    <div id='valine'></div>
+  
     
 </article>
   </div>
@@ -419,10 +448,20 @@
 <footer class='footer'>
     <div class='footer-social'>
         
+            
+                
+                    <div class='footer-social-item'><a href='https://github.com/qutang' target='_blank' ><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+                
+                    <div class='footer-social-item'><a href='https://www.linkedin.com/in/qutang' target='_blank' ><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></div>
+                
+            
+        
     </div>
     <p> Copyright by <a href="http://qutang.github.io">@Qu Tang</a> 2017</p>
     <p> Icons by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">Flaticon</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0</a></p>
-    <p>Theme <a href="http://qutang.github.io/2017/06/27/Hexo-theme-cutie/">Cutie</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
+    <p>Theme <a href="">Cutie 2.0-dev</a> | Powered by <a href="http://hexo.io">Hexo.</a></p>
 </footer>
 
   <br>
@@ -539,51 +578,43 @@
 
 	</div>
 
-  <script>
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://qutang-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-    </script>
-<script data-no-instant>
-InstantClick.on('change', function(isInitialLoad) {
-  if (isInitialLoad === false) {
-    if (typeof MathJax !== 'undefined') // support MathJax
-      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
-    if (typeof prettyPrint !== 'undefined') // support google code prettify
-      prettyPrint();
-    if (typeof _hmt !== 'undefined')  // support 百度统计
-      _hmt.push(['_trackPageview', location.pathname + location.search]);
-    if (typeof ga !== 'undefined')  // support google analytics
-        ga('send', 'pageview', location.pathname + location.search);
-    changeLayoutOnTouchScreen();
+  
+    
+
+
+
+    
+    
+    
+    
+
+<script>
+    new Valine({
+        el: '#valine',
+        notify:false, 
+        verify:false,
+        appId: 'uvf1sW7tg7XM61LtgGY5EKUM-gzGzoHsz',
+        appKey: 'CaSUjr9v26gpuVqN99Rwc4Qv',
+        placeholder: 'Feel free to leave some 💩 or 🎉',
+        path:window.location.pathname, 
+        avatar:'retro',
+        lang: 'en'
+    });
+</script>
+
+
+
+
+
+<script src="/js/lightgallery.min.js"></script>
+<script type='text/javascript'>
     lightGallery(document.getElementById('lightgallery'));
-    setVersionForCurrentPage();
-    setVersionBadgeForIndexPages();
-    //
-    var d = document, s = d.createElement('script');
-    s.src = 'https://qutang-github-io.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    }
-});
-InstantClick.init();
+</script>
+
+<script data-no-instant type='text/javascript'>
+changeLayoutOnTouchScreen();
 setVersionForCurrentPage();
 setVersionBadgeForIndexPages();
-</script>
-<script type='text/javascript'>
-  lightGallery(document.getElementById('lightgallery'));
 </script>
 
 <!-- End Document
